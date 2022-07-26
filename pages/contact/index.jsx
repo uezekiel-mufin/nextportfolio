@@ -37,11 +37,13 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className='flex flex-col pt-[100px]'>
-      <div className='my-[20px] mb-[3rem] py-[20px] w-2/5 mx-[4rem]'>
-        <h1 className='text-6xl font-bold'>Contact</h1>
-        <p>If you'd like us to talk about your project rightaway,</p>
-        <p>
+    <div className='flex gap-8 flex-col pt-[100px] mx-2'>
+      <div className='md:my-[20px] flex flex-col  md:mb-[3rem] w-full   py-[20px] md:w-2/5 md:mx-[4rem]'>
+        <h1 className='text-6xl font-bold '>Contact</h1>
+        <p className='mx-2'>
+          If you'd like us to talk about your project rightaway,
+        </p>
+        <p className='mx-2'>
           send a mail below and I'll be in touch with you as soon as possible.
         </p>
       </div>
@@ -106,8 +108,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className='p-[50px] capitalize'>
-        <h4 className='text-3xl font-semi-bold text-[#17161A]'>
+      <div className='md:p-[50px] capitalize'>
+        <h4 className='text-2xl md:text-3xl font-semibold text-[#17161A]'>
           You can also reach us via:
         </h4>
         <ul>
@@ -155,7 +157,7 @@ const Contact = () => {
         </ul>
       </div>
       <hr />
-      <footer className='p-3'>
+      <footer className='p-1 md:p-3'>
         <p>&copy; 2022, All rights reserved</p>
       </footer>
     </div>

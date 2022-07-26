@@ -12,7 +12,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className='flex justify-center items-center h-full  '>
-        <div className='relative md:grid md:grid-cols-3  gap-8 w-4/5 h-full justify-evenly content-evenly'>
+        <div className='relative flex flex-col m-1 gap-12 md:grid md:grid-cols-3  md:gap-8 w-4/5 h-full justify-evenly content-evenly'>
           {data.map((item) => (
             <div
               key={item.id}
@@ -35,9 +35,9 @@ const Portfolio = () => {
                 {item.technologies}
               </h4>
               <p className='text-sm'>{item.description}</p>
-              <div className=' flex gap-4 justify-around mx-12'>
+              <div className=' flex gap-4 justify-around mx-8'>
                 <a href={item.liveDemo} rel='noreferrer' target='_blank'>
-                  <button className='bg-[#686d75] rounded-md text-white px-3 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>
+                  <button className='bg-[#686d75] rounded-md text-white w-full px-2  md:px-3 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>
                     live Demo
                   </button>
                 </a>

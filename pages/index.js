@@ -24,12 +24,12 @@ export default function Home() {
 
         <div className='flex gap-8 justify-center'>
           <Link href='/contact'>
-            <button className='bg-[#17161A] text-[#fff]  py-2 px-3 md:py-4 md:px-4'>
+            <button className='bg-[#17161A] text-[#fff] hover:bg-gray-700  py-1 px-3 md:py-2 md:px-4'>
               Contact Me
             </button>
           </Link>
           <Link href='/portfolio'>
-            <button className='bg-[#17161A] text-[#fff]  py-2 px-3 md:py-4 md:px-6'>
+            <button className='bg-[#17161A] text-[#fff] hover:bg-gray-700  py-1 px-3 md:py-2 md:px-6'>
               PortFolio
             </button>
           </Link>

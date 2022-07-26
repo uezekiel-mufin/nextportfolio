@@ -29,6 +29,41 @@ a {
   padding: 100px;
 }
 
+@media (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .menuList {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    top: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 7rem;
+    z-index: 10000000;
+    color: antiquewhite;
+    animation-name: menu;
+    animation-duration: 1s;
+  }
+
+  @keyframes menu {
+    from {
+      margin-right: -5%;
+      width: 120%;
+    }
+
+    to {
+      margin-left: 100%;
+      width: 120%;
+    }
+  }
+}
+
 .input {
   height: 3rem;
 }
