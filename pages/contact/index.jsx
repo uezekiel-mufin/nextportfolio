@@ -37,7 +37,12 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className='flex gap-8 flex-col pt-[100px] mx-2'>
+    <motion.div
+      transiton={{ duration: 2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='flex gap-8 flex-col pt-[100px] mx-2'
+    >
       <div className='md:my-[20px] flex flex-col  md:mb-[3rem] w-full   py-[20px] md:w-2/5 md:mx-[4rem]'>
         <h1 className='text-6xl font-bold '>Contact</h1>
         <p className='mx-2'>
@@ -50,7 +55,7 @@ const Contact = () => {
       <div className='bg-[rgba(0,0,0,0.1)] form'>
         <div className='flex flex-col gap-[1rem]'>
           <h2 className='text-4xl'>Work inquiries</h2>
-          <p className='font-light'>
+          <p className='font-light mb-4 '>
             Kindly Fill in this form with your inquiry.
           </p>
         </div>
@@ -157,10 +162,10 @@ const Contact = () => {
         </ul>
       </div>
       <hr />
-      <footer className='p-1 md:p-3'>
+      <footer className='p-1 md:p-3 flex justify-center'>
         <p>&copy; 2022, All rights reserved</p>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 

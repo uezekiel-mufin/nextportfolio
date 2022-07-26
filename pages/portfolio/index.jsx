@@ -1,10 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import data from "./portfolioData";
-
+import { motion } from "framer-motion";
 const Portfolio = () => {
+  const portVariant = {
+    hidden: { y: 200 },
+  };
   return (
-    <div className='flex flex-col mb-[100px]'>
+    <motion.div
+      transiton={{ ease: "easeOut", duration: 500 }}
+      initial={{ y: 200 }}
+      animate={{ y: 0 }}
+      exit={{ y: -200 }}
+      className='flex flex-col mb-[100px]'
+    >
       <div className='flex flex-col items-center mb-8 mt-[100px]  gap-4'>
         <div className='w-4/5'>
           <h6 className='font-bold text-[#686d75]'>Portfolio</h6>
@@ -51,7 +60,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
