@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import data from "./portfolioData";
+import data from "../../public/components/portfolioData";
 import { motion } from "framer-motion";
 const Portfolio = () => {
   const portVariant = {
