@@ -38,7 +38,7 @@ const Contact = () => {
   };
   return (
     <div className='flex flex-col pt-[100px]'>
-      <div className='my-[20px] mb-[5rem] py-[20px] w-2/5 mx-[4rem]'>
+      <div className='my-[20px] mb-[3rem] py-[20px] w-2/5 mx-[4rem]'>
         <h1 className='text-6xl font-bold'>Contact</h1>
         <p>If you'd like us to talk about your project rightaway,</p>
         <p>
@@ -56,6 +56,7 @@ const Contact = () => {
           <form
             className='flex flex-col gap-[1rem]'
             onSubmit={(handleSubmit(regForm), sendEmail)}
+            ref={form}
           >
             <div className='flex flex-col '>
               <label htmlFor='name' className='text-base font-semibold'>
@@ -105,7 +106,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className='p-[50px] capitalize text-blue-700'>
+      <div className='p-[50px] capitalize'>
         <h4 className='text-3xl font-semi-bold text-[#17161A]'>
           You can also reach us via:
         </h4>
@@ -113,7 +114,7 @@ const Contact = () => {
           <li className='flex gap-2 lowercase'>
             <a
               href='https://www.eudiomuno@yahoo.com'
-              className='text-base hover:text-red active:red capitalize '
+              className='text-base  active:red capitalize '
               target='_blank'
               rel='noreferrer'
             >
@@ -124,7 +125,7 @@ const Contact = () => {
           <li>
             <a
               href='https://wa.me/+2348147576669'
-              className='text-base hover:text-red active:red '
+              className='text-base hover:text-red-500 active:red  '
               target='_blank'
               rel='noreferrer'
             >
@@ -134,7 +135,7 @@ const Contact = () => {
           <li>
             <a
               href='https://www.twitter.com/EzzyWealth'
-              className='text-base hover:text-red active:red '
+              className='text-base hover:text-red-500 active:red  '
               target='_blank'
               rel='noreferrer'
             >
@@ -144,7 +145,7 @@ const Contact = () => {
           <li>
             <a
               href='https://www.linkedin.com/in/ezekiel-udiomuno-b14539150'
-              className='text-base hover:text-red active:red '
+              className='text-base hover:text-red-500 active:red  '
               target='_blank'
               rel='noreferrer'
             >
@@ -154,7 +155,7 @@ const Contact = () => {
         </ul>
       </div>
       <hr />
-      <footer className='p-4'>
+      <footer className='p-3'>
         <p>&copy; 2022, All rights reserved</p>
       </footer>
     </div>
