@@ -161,10 +161,6 @@ const Contact = () => {
           </li>
         </ul>
       </div>
-      <hr />
-      <footer className='p-1 md:p-3 flex justify-center'>
-        <p>&copy; 2022, All rights reserved</p>
-      </footer>
     </motion.div>
   );
 };

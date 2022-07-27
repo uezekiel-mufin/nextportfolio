@@ -67,3 +67,13 @@ a {
 .input {
   height: 3rem;
 }
+
+.logo {
+  display: inline;
+  margin-left: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4.5rem;
+  text-shadow: 5px 5px 5px rgb(13, 141, 245);
+  color: #944d97;
+}

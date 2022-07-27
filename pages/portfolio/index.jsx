@@ -8,10 +8,9 @@ const Portfolio = () => {
   };
   return (
     <motion.div
-      transiton={{ ease: "easeOut", duration: 500 }}
-      initial={{ y: 200 }}
-      animate={{ y: 0 }}
-      exit={{ y: -200 }}
+      transiton={{ ease: "easeOut", duration: 2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       className='flex flex-col mb-[100px]'
     >
       <div className='flex flex-col items-center mb-8 mt-[100px]  gap-4'>

@@ -2,10 +2,16 @@
 import React from "react";
 import Image from "next/image";
 import portfolio from "../../public/images/portfolio.jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className='w-full pb-8 pt-24 h-full md:h-screen z-[9999] flex justify-center items-center'>
+    <motion.div
+      transiton={{ duration: 2 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className='w-full pb-8 pt-24 h-full md:h-screen z-[9999] flex justify-center items-center'
+    >
       <main className='flex flex-col md:grid grid-cols-2 mx-4 md:w-4/5 h-screen gap-8'>
         <section className='flex flex-col items-center gap-1 justify-center text-center w-full'>
           <h1 className='font-bold text-2xl w-full text-start'>About</h1>
@@ -39,7 +45,7 @@ const About = () => {
           />
         </section>
       </main>
-    </div>
+    </motion.div>
   );
 };
 

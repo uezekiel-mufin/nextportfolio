@@ -29,9 +29,7 @@ const Navbar = () => {
     <nav className=' w-full fixed flex flex-row h-[80px] items-center justify-between bg-white z-[999]'>
       <span className='flex flex-1 text-5xl italic mx-2 md:mx-10'>
         <Link href='/'>
-          <h1 className=' shadow-md  cursor-pointer font-extrabold shadow-blue-400'>
-            EU
-          </h1>
+          <h1 className=' logo'>EU</h1>
         </Link>
       </span>
 
