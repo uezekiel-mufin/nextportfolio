@@ -30,7 +30,7 @@ const About = () => {
             My stacks are HTML, CSS, TailwindCSS, Javascript, ReactJS, NextJS.
           </p>
           <button className='bg-[#17161A] text-[#fff] py-2 mt-8 mb-8 px-4 hover:bg-gray-700'>
-            <a download href='public/images/certificate.pdf'>
+            <a download href='/images/Ezekiel-/Udiomuno.pdf'>
               Download CV
             </a>
           </button>

@@ -19,7 +19,7 @@ export default function Home() {
           I Develop Responsive and User-friendly Websites & Web-Applications
         </h3>
 
-        <div className='flex gap-8 justify-center'>
+        <div className='flex mt-5 gap-8 justify-center'>
           <Link href='/contact'>
             <button className='bg-[#17161A] text-[#fff] hover:bg-gray-700  py-1 px-3 md:py-2 md:px-4'>
               Contact Me

@@ -24,7 +24,7 @@ const Portfolio = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className='flex flex-col gap-[5px] h-full justify-start  '
+              className='flex flex-col gap-[5px] h-full justify-start bg-[rgba(0,0,0,0.3)] rounded-lg p-4 '
             >
               <a
                 href={item.liveDemo}
@@ -43,7 +43,7 @@ const Portfolio = () => {
                 {item.technologies}
               </h4>
               <p className='text-sm'>{item.description}</p>
-              <div className=' flex gap-4 justify-around mx-8'>
+              <div className=' flex gap-4 justify-around mt-4 mb-2 mx-8'>
                 <a href={item.liveDemo} rel='noreferrer' target='_blank'>
                   <button className='bg-[#686d75] rounded-md text-white w-full px-2  md:px-3 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>
                     live Demo
