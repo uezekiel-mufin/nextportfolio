@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
-import portfolio from "../../public/images/portfolio.jpg";
+import portfolio from "../../public/images/portfolio.jpeg";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -39,8 +39,8 @@ const About = () => {
           <Image
             src={portfolio}
             alt='me'
-            width={400}
-            height={500}
+            width={300}
+            height={400}
             className='rounded-md'
           />
         </section>
