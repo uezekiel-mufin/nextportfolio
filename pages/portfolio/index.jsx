@@ -43,7 +43,7 @@ const Portfolio = () => {
                 {item.technologies}
               </h4>
               <p className='text-sm'>{item.description}</p>
-              <div className=' flex gap-4 justify-around mt-4 mb-2 mx-8'>
+              <div className=' flex gap-4 justify-around mt-4 mb-2  sm:mx-4 md:mx-4'>
                 <a href={item.liveDemo} rel='noreferrer' target='_blank'>
                   <button className='bg-[#686d75] rounded-md text-white w-full px-2  md:px-3 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>
                     live Demo

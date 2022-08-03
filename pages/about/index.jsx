@@ -10,10 +10,10 @@ const About = () => {
       transiton={{ duration: 2 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className='w-full pb-8 pt-24 h-full md:h-screen z-[9999] flex justify-center items-center'
+      className='w-full mb-8 pb-8 pt-24 h-full md:h-screen z-[9999] flex justify-center items-center'
     >
-      <main className='flex flex-col md:grid grid-cols-2 mx-4 md:w-4/5 h-screen gap-8'>
-        <section className='flex flex-col items-center gap-1 justify-center text-center w-full'>
+      <main className='flex flex-col items-center md:grid grid-cols-2 mx-4 md:w-4/5  gap-8'>
+        <section className='flex flex-col px-4 items-center gap-1 justify-center text-center w-full'>
           <h1 className='font-bold text-2xl w-full text-start'>About</h1>
           <h1 className='text-[#17161A] text-lg font-semibold w-full text-start mb-4'>
             I'm a FRONT END WEB Developer
@@ -35,13 +35,12 @@ const About = () => {
             </a>
           </button>
         </section>
-        <section className='flex items-center text-center w-full'>
+        <section className='flex relative justify-center w-full h-[500px]  sm:px-2 md:w-[400px] sm:w-[500px] md:h-[500px]'>
           <Image
             src={portfolio}
             alt='me'
-            width={300}
-            height={400}
-            className='rounded-md'
+            layout='fill'
+            className='rounded-md h-[400px] mx-2  '
           />
         </section>
       </main>
