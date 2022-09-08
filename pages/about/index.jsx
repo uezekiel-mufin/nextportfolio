@@ -28,10 +28,10 @@ const About = () => {
 
           <p className='w-full text-start'>
             My stacks are HTML, CSS, TailwindCSS, Javascript, Material-UI,
-            ReactJS, NextJS, Git, Github, GraphCMS,.
+            ReactJS, NextJS, Git, Github, GraphCMS, Redux-Toolkit, MongoDB.
           </p>
           <button className='bg-[#17161A] text-[#fff] py-2 mt-8 mb-8 px-4 hover:bg-gray-700'>
-            <a download href='/images/Ezekiel-/Udiomuno.pdf'>
+            <a download href='/images/Ezekiel-/Ezekiel_Udiomuno_CV.pdf'>
               Download CV
             </a>
           </button>

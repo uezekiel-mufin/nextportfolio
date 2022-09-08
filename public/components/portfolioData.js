@@ -1,8 +1,8 @@
 import Forkify from "../../public/images/forkify.png";
 import Bankist from "../../public/images/bankist.png";
 import Hotel from "../../public/images/hotel_red.png";
-import Piggy from "../../public/images/piggyD.png";
-import Stockboard from "../../public/images/stockboard.png";
+import zicomm1 from "../../public/images/zicomm1.png";
+import Zicomm2 from "../../public/images/zicomm2.png";
 import Estate from "../../public/images/estate.png";
 
 const data = [
@@ -46,23 +46,21 @@ const data = [
   },
   {
     id: 5,
-    image: Piggy,
-    name: "Piggy Dice",
-    description:
-      "A mini web app showing how i manipulated the DOM element using ReactJS",
-    technologies: "ReactJS || CSS",
-    liveDemo: "https://piggyd.netlify.app/",
-    Github: "https://github.com/Ezzywealth/pig-dice",
+    image: zicomm1,
+    name: "Zicomm-v1",
+    description: "A mini e-commerce store for shirt sales ",
+    technologies: "NextJs || TailwindCSS || headless-ui || mongoDB ",
+    liveDemo: "https://zicomm-v1.vercel.app/",
+    Github: "https://github.com/Ezzywealth/Zicomm2.0",
   },
   {
     id: 6,
-    image: Stockboard,
-    name: "Stockboard Dashboard",
-    description:
-      "A simple website showing how the dashboard of a web app looks like",
-    technologies: "ReactJs || CSS || Material ui || ReChart",
-    liveDemo: "https://stodashboard.netlify.app/",
-    Github: "https://github.com/Ezzywealth/dashboard",
+    image: Zicomm2,
+    name: "Zicomm-v2",
+    description: "A mini e-commerce store for furniture sales ",
+    technologies: "NextJs || TailwindCSS || Redux-toolkit || mongoDB ",
+    liveDemo: "https://zicomm-v2.vercel.app/",
+    Github: "https://github.com/Ezzywealth/nextJSecommerce",
   },
 ];
 export default data;
