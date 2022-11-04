@@ -1,7 +1,7 @@
 import Forkify from "../../public/images/forkify.png";
 import Bankist from "../../public/images/bankist.png";
 import Hotel from "../../public/images/hotel_red.png";
-import zicomm1 from "../../public/images/zicomm1.png";
+import Apple from "../../public/images/appleclone-landingpage.png";
 import Zicomm2 from "../../public/images/zicomm2.png";
 import Estate from "../../public/images/estate.png";
 
@@ -46,12 +46,13 @@ const data = [
   },
   {
     id: 5,
-    image: zicomm1,
-    name: "Zicomm-v1",
-    description: "A mini e-commerce store for shirt sales ",
-    technologies: "NextJs || TailwindCSS || headless-ui || mongoDB ",
-    liveDemo: "https://zicomm-v1.vercel.app/",
-    Github: "https://github.com/Ezzywealth/Zicomm2.0",
+    image: Apple,
+    name: "Apple-clone",
+    description: "A redesign of the apple e-commerce website ",
+    technologies:
+      "Typescript || NextJs || TailwindCSS || headless-ui || sanityIO  ",
+    liveDemo: "https://apple-clone-neon.vercel.app/",
+    Github: "https://github.com/Ezzywealth/apple-clone-typescript",
   },
   {
     id: 6,
