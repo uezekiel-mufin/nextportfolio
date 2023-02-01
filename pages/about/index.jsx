@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import Image from "next/image";
-import portfolio from "../../public/images/portfolio.jpeg";
-import { motion } from "framer-motion";
+import React from 'react';
+import Image from 'next/image';
+import portfolio from '../../public/images/portfolioNew.jpg';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -31,18 +31,22 @@ const About = () => {
             ReactJS, NextJS, Git, Github, GraphCMS, Redux-Toolkit, MongoDB.
           </p>
           <button className='bg-[#17161A] text-[#fff] py-2 mt-8 mb-8 px-4 hover:bg-gray-700'>
-            <a download href='/images/Ezekiel-/Ezekiel_Udiomuno_CV.pdf'>
+            <a download href='/images/Ezekiel_Udiomuno_CV.pdf'>
               Download CV
             </a>
           </button>
         </section>
-        <section className='flex relative justify-center w-full h-[500px]  sm:px-2 md:w-[400px] sm:w-[500px] md:h-[500px]'>
-          <Image
-            src={portfolio}
-            alt='me'
-            layout='fill'
-            className='rounded-md h-[400px] mx-2  '
-          />
+        <section className='flex justify-center w-full shadow-lg'>
+          <div className='  w-full block'>
+            <Image
+              src={portfolio}
+              alt='me'
+              layout='responsive'
+              className='rounded-md mx-2 '
+              height={500}
+              width={500}
+            />
+          </div>
         </section>
       </main>
     </motion.div>
