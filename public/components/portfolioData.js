@@ -1,9 +1,9 @@
 import Forkify from '../../public/images/forkify.png';
 import Bankist from '../../public/images/bankist.png';
 import Hotel from '../../public/images/hotel_red.png';
-import Apple from '../../public/images/appleclone-landingpage.png';
+import Apple from '../../public/images/appleclone.png';
 import Zicomm2 from '../../public/images/zicomm2.png';
-import blog from '../../public/images/ezzyblog.png';
+import blog from '../../public/images/ezzyblog2.png';
 
 const data = [
 	{
@@ -12,7 +12,7 @@ const data = [
 		name: 'Tech Talks',
 		description: 'A NextJS and SanityIo blog site for tech related articles',
 		technologies: 'NextJS || TYpeScript || TailwindCSS || Sanityio',
-		liveDemo: 'ezzyblog.vercel.app',
+		liveDemo: 'https://ezzyblog.vercel.app',
 		Github: 'https://github.com/Ezzywealth/ezzyblog',
 	},
 	{
