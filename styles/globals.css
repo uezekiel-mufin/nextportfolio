@@ -4,76 +4,91 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .text-shadow {
-  text-shadow: 4px 4px 5px rgb(13, 141, 245);
+	text-shadow: 4px 4px 5px rgb(13, 141, 245);
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 30% 50%;
-  padding: 100px;
+	display: grid;
+	grid-template-columns: 30% 50%;
+	padding: 100px;
 }
 
 @media (max-width: 600px) {
-  .form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
+	.form {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
 
-  .menuList {
-    display: flex;
-    position: absolute;
-    right: 0;
-    padding: 1rem;
-    top: 60px;
-    background: rgba(0, 0, 0, 0.9);
-    width: 100vw;
-    height: 7rem;
-    z-index: 10000000;
-    color: antiquewhite;
-    animation-name: menu;
-    /* animation-duration: 1s; */
-  }
+	.menuList {
+		display: flex;
+		position: absolute;
+		right: 0;
+		padding: 1rem;
+		top: 60px;
+		background: rgba(0, 0, 0, 0.9);
+		width: 100vw;
+		height: 7rem;
+		z-index: 10000000;
+		color: antiquewhite;
+		animation-name: menu;
+		/* animation-duration: 1s; */
+	}
 
-  @keyframes menu {
-    from {
-      margin-right: -5%;
-      width: 120%;
-    }
+	@keyframes menu {
+		from {
+			margin-right: -5%;
+			width: 120%;
+		}
 
-    to {
-      margin-left: 100%;
-      width: 120%;
-    }
-  }
+		to {
+			margin-left: 100%;
+			width: 120%;
+		}
+	}
 }
 
 .input {
-  height: 3rem;
+	height: 3rem;
 }
 
 .logo {
-  display: inline;
-  margin-left: 0.5rem;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 4.5rem;
-  text-shadow: 5px 5px 5px rgb(13, 141, 245);
-  color: #944d97;
+	display: inline;
+	margin-left: 0.5rem;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 3.5rem;
+	text-shadow: 5px 5px 5px rgb(13, 141, 245);
+	color: #944d97;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.animate-slide-in {
+	animation-name: slide-in;
+	animation-duration: 2s; /* changed from 1s to 5s */
+	animation-fill-mode: both;
 }

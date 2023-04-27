@@ -19,7 +19,7 @@ const About = () => {
 						</a>
 					</button>
 				</section>
-				<section className='flex justify-center w-full shadow-lg'>
+				<section className='flex justify-center w-full '>
 					<div className='  w-full block'>
 						<Image src={portfolio} alt='me' layout='responsive' className=' mx-2 scale-75 rounded-xl ' />
 					</div>
