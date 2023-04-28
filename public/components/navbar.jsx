@@ -3,14 +3,39 @@ import Link from 'next/link';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import SideNav from './SideNav';
 
+const links = [
+	{
+		id: 1,
+		name: 'Home',
+		link: '/',
+	},
+	{
+		id: 2,
+		name: 'About',
+		link: '/about',
+	},
+	{
+		id: 3,
+		name: 'Portfolio',
+		link: '/portfolio',
+	},
+	{
+		id: 4,
+		name: 'Contact Us',
+		link: '/contact',
+	},
+];
+
 const Navbar = () => {
 	const [isMenu, setIsMenu] = useState(false);
+	const [curId, setCurId] = useState(1);
 
 	const openMenu = () => {
 		setIsMenu((prev) => !prev);
 	};
+
 	const closeMenu = () => {
-		setIsMenu((prev) => !prev);
+		setIsMenu(false);
 	};
 
 	return (
@@ -32,26 +57,13 @@ const Navbar = () => {
 					</span>
 				</div>
 				<ul id='Menu' className='hidden  md:flex md:mx-12 justify-around gap-10 items-center  '>
-					<Link href='/'>
-						<li onClick={() => closeMenu()} className='cursor-pointer hover:text-red-500 active:text-red font-sans font-medium text-base '>
-							Home
-						</li>
-					</Link>
-					<Link href='/about'>
-						<li onClick={() => closeMenu()} className='cursor-pointer hover:text-red-500 active:text-red font-sans font-medium text-base'>
-							About
-						</li>
-					</Link>
-					<Link href='/portfolio'>
-						<li onClick={() => closeMenu()} className='cursor-pointer hover:text-red-500 active:text-red font-sans font-medium text-base'>
-							Porfolio
-						</li>
-					</Link>
-					<Link href='/contact'>
-						<li onClick={() => closeMenu()} className='cursor-pointer hover:text-red-500 active:text-red font-sans font-medium text-base'>
-							Contact
-						</li>
-					</Link>
+					{links.map((link) => (
+						<Link href={link.link} key={link.id}>
+							<li onClick={() => setCurId(link.id)} className={`cursor-pointer hover:text-[#944d97] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-lg ${link.id === curId ? 'text-[#b958bd]' : ''}`}>
+								{link.name}
+							</li>
+						</Link>
+					))}
 				</ul>
 			</div>
 		</nav>
