@@ -8,7 +8,7 @@ export default function Home() {
 	useEffect(() => {
 		const message = new SpeechSynthesisUtterance('Hello, Welcome to my portfolio website, we are glad to have you here!');
 		window.speechSynthesis.speak(message);
-	});
+	}, []);
 	return (
 		<motion.div transiton={{ duration: 5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='w-full md:mx-8 h-screen z-[9999] flex justify-center items-center'>
 			<main className='mx-1 flex flex-col w-full md:w-3/5 md:h-3/5 gap-8 justify-center items-center text-center'>
@@ -24,10 +24,10 @@ export default function Home() {
 
 				<div className='flex mt-5 gap-8 justify-center'>
 					<Link href='/contact'>
-						<button className='bg-[#944d97] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear  rounded-lg py-2 px-3 md:py-2 md:px-4'>Contact Me</button>
+						<button className='bg-[#17161A] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear  rounded-lg py-2 px-3 md:py-2 md:px-4'>Contact Me</button>
 					</Link>
 					<Link href='/portfolio'>
-						<button className='bg-[#944d97] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear rounded-lg  py-2  px-3 md:py-2  md:px-6'>PortFolio</button>
+						<button className='bg-[#17161A] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear rounded-lg  py-2  px-3 md:py-2  md:px-6'>PortFolio</button>
 					</Link>
 				</div>
 			</main>

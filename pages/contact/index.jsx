@@ -69,7 +69,7 @@ const Contact = () => {
 							</label>
 							<textarea type='text' id='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
-						<button className='bg-[#944d97] text-[#fff] hover:hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear md:w-[200px]  rounded-lg py-2 px-3 md:py-2 md:px-4 mt-8'>Submit</button>
+						<button className='bg-[#17161A] text-[#fff] hover:hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear md:w-[200px]  rounded-lg py-2 px-3 md:py-2 md:px-4 mt-8'>Submit</button>
 					</form>
 				</div>
 			</div>
