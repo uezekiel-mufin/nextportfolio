@@ -12,7 +12,7 @@ export default function Home() {
 					<span className='text-[#17161A] font-semibold text-2xl md:text-4xl'> Hi, My name is</span>
 					<div>
 						{' '}
-						<Typewriter words={['Ezekiel Udiomuno']} deleteAllOnFinish={true} cursor cursorStyle='|' loop={true} typeSpeed={300} deleteSpeed={200} delaySpeed={1000} />
+						<Typewriter words={['Ezekiel Udiomuno']} deleteAllOnFinish={true} cursor cursorStyle='|' loop={true} typeSpeed={200} deleteSpeed={200} delaySpeed={1000} />
 						<span className='text-[#944d97]'>!</span>
 					</div>
 					{/* Hi, My name is Ezekiel Udiomuno<span className='text-red-800'>!</span> */}
