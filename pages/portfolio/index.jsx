@@ -17,19 +17,19 @@ const Portfolio = () => {
 			<div className='flex justify-center items-center h-full  '>
 				<div className='relative flex flex-col m-1 gap-12 md:grid md:grid-cols-3  md:gap-8 w-4/5 h-full justify-evenly content-evenly'>
 					{data.map((item) => (
-						<div key={item.id} className='flex flex-col gap-[5px] h-full justify-start bg-[rgba(0,0,0,0.3)] rounded-lg p-4 '>
-							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-110 transition-all duration-500 ease-linear'>
-								<Image src={item.image} alt='image' className='rounded-md hover:scale-150' />
+						<div key={item.id} className='flex shadow-lg flex-col gap-[5px] h-full justify-start shadow-pink-800 rounded-lg p-4 '>
+							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>
+								<Image src={item.image} alt='image' className='rounded-md hover:scale-105' />
 							</a>
 							<h1 className='text-shadow font-bold'>{item.name}</h1>
 							<h4 className=' flex justify-start font-semibold'>{item.technologies}</h4>
 							<p className='text-sm'>{item.description}</p>
-							<div className=' flex gap-4 justify-around mt-4 mb-2  sm:mx-4 md:mx-4'>
-								<a href={item.liveDemo} rel='noreferrer' target='_blank'>
-									<button className='bg-[#686d75] rounded-md text-white w-full px-2  md:px-3 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>live Demo</button>
+							<div className=' flex justify-between mt-4 mb-2 w-full gap-4'>
+								<a href={item.liveDemo} rel='noreferrer' target='_blank' className='w-full'>
+									<button className='bg-pink-600 rounded-md text-white w-full px-2  md:px-3 py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-pink-700'>live Demo</button>
 								</a>
-								<a href={item.Github} rel='noreferrer' target='_blank'>
-									<button className='bg-[#686d75] rounded-md text-white px-6 py-1 hover:scale-110 transition-all duration-500 ease-out hover:font-bold hover:bg-[#333333]'>Github</button>
+								<a href={item.Github} rel='noreferrer' target='_blank' className='w-full'>
+									<button className='bg-pink-600 rounded-md text-white px-2  md:px- w-full py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-pink-700'>Github</button>
 								</a>
 							</div>
 						</div>

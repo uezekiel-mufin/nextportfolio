@@ -29,7 +29,7 @@ const data = [
 		image: Carbooky,
 		name: 'Carbooky',
 		description: 'A Car rental web app for cabs reservations.',
-		technologies: 'ReactJS || TailwindCSS || Postgres || Ruby on Rails',
+		technologies: 'ReactJS || ReactJS || TailwindCSS || Postgres || Ruby on Rails',
 		liveDemo: 'https://carbooky.vercel.app/cabs',
 		Github: 'https://github.com/Ezzywealth/cab_bookings_frontend',
 	},
