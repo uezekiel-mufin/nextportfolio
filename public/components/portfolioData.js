@@ -1,6 +1,6 @@
 import Forkify from '../../public/images/forkify.png';
 import Bankist from '../../public/images/bankist.png';
-import Hotel from '../../public/images/hotel_red.png';
+import Carbooky from '../../public/images/carbooky.png';
 import Apple from '../../public/images/appleclone.png';
 import Zicomm2 from '../../public/images/zicomm2.png';
 import blog from '../../public/images/ezzyblog2.png';
@@ -26,12 +26,12 @@ const data = [
 	},
 	{
 		id: 3,
-		image: Hotel,
-		name: 'Hotel Reddington',
-		description: 'A simple website desgin for a hotel',
-		technologies: 'ReactJS || TailwindCSS || React-Router || Framer Motion',
-		liveDemo: 'https://hotelred.netlify.app/',
-		Github: 'https://github.com/Ezzywealth/hotel',
+		image: Carbooky,
+		name: 'Carbooky',
+		description: 'A Car rental web app for cabs reservations.',
+		technologies: 'ReactJS || TailwindCSS || Postgres || Ruby on Rails',
+		liveDemo: 'https://carbooky.vercel.app/cabs',
+		Github: 'https://github.com/Ezzywealth/cab_bookings_frontend',
 	},
 	{
 		id: 4,
