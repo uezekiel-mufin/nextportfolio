@@ -26,10 +26,10 @@ const Portfolio = () => {
 							<p className='text-sm'>{item.description}</p>
 							<div className=' flex justify-between mt-4 mb-2 w-full gap-4'>
 								<a href={item.liveDemo} rel='noreferrer' target='_blank' className='w-full'>
-									<button className='bg-pink-600 rounded-md text-white w-full px-2  md:px-3 py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-pink-700'>live Demo</button>
+									<button className='bg-[#944d97] rounded-md text-white w-full px-2  md:px-3 py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-[#662768]'>live Demo</button>
 								</a>
 								<a href={item.Github} rel='noreferrer' target='_blank' className='w-full'>
-									<button className='bg-pink-600 rounded-md text-white px-2  md:px- w-full py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-pink-700'>Github</button>
+									<button className='bg-[#944d97] rounded-md text-white px-2  md:px- w-full py-2 transition-all duration-500 ease-out hover:font-bold hover:bg-[#662768]'>Github</button>
 								</a>
 							</div>
 						</div>
