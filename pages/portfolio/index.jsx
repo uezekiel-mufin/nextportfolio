@@ -15,7 +15,7 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className='flex justify-center items-center h-full  '>
-				<div className='relative flex flex-col m-1 gap-12 md:grid md:grid-cols-3  md:gap-8 w-4/5 h-full justify-evenly content-evenly'>
+				<div className='flex flex-col m-1 gap-12 md:grid md:grid-cols-3  md:gap-8 w-4/5 h-full justify-evenly content-evenly'>
 					{data.map((item) => (
 						<div key={item.id} className='relative grid grid-cols-1 shadow-lg gap-[5px] h-full justify-start shadow-pink-800 rounded-lg p-4 '>
 							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>

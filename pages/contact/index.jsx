@@ -3,6 +3,8 @@ import React, { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 	const {
@@ -28,11 +30,12 @@ const Contact = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		emailjs.sendForm('service_ezzy', 'template_lf4fnom', form.current, 'vngt2iIdOB55EqdDp');
+		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PROJECT_ID);
 		e.target.reset();
 	};
 	return (
 		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col pt-[100px] mx-2 my-4'>
+			<ToastContainer position='top-center' />
 			<div className='md:my-[20px] flex flex-col  md:mb-[3rem] w-full   py-[20px] md:w-2/5 md:mx-[4rem]'>
 				<h1 className='text-3xl md:text-5xl mb-4 mx-2 font-bold '>Contact</h1>
 				<p className='mx-2'>If you'd like us to talk about your project rightaway,</p>
@@ -49,25 +52,25 @@ const Contact = () => {
 							<label htmlFor='name' className='text-base font-semibold'>
 								Your name
 							</label>
-							<input type='text' id='name' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='email' className='text-base font-semibold '>
 								Your email
 							</label>
-							<input type='email' id='email' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='email' id='email' name='from_email' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='subject' className='text-base font-semibold '>
 								Subject
 							</label>
-							<input type='text' id='subject' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='message' className='text-base font-semibold '>
 								Your Message
 							</label>
-							<textarea type='text' id='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<textarea type='text' id='message' name='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<button className='bg-[#17161A] text-[#fff] hover:hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear md:w-[200px]  rounded-lg py-2 px-3 md:py-2 md:px-4 mt-8'>Submit</button>
 					</form>
