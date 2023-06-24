@@ -31,7 +31,15 @@ const Contact = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-		emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PROJECT_ID);
+		console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+		emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY).then(
+			(response) => {
+				toast.success('Message sent successfully');
+			},
+			(err) => {
+				toast.error('Message not sent');
+			}
+		);
 		e.target.reset();
 	};
 	return (
@@ -50,32 +58,31 @@ const Contact = () => {
 				<div className='col-start-2  row-span-full'>
 					<form className='flex flex-col gap-[1rem]' onSubmit={(handleSubmit(regForm), sendEmail)} ref={form}>
 						<div className='flex flex-col '>
-							<label htmlFor='name' className='text-base font-semibold'>
+							<label htmlFor='name' className='  font-semibold'>
 								Your name
 							</label>
-							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
-							<label htmlFor='email' className='text-base font-semibold '>
+							<label htmlFor='email' className=' font-semibold '>
 								Your email
 							</label>
-							<input type='email' id='email' name='from_email' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='email' id='email' name='from_email' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
-							<label htmlFor='subject' className='text-base font-semibold '>
+							<label htmlFor='subject' className=' font-semibold '>
 								Subject
 							</label>
-							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
 						<div className='flex flex-col '>
-							<label htmlFor='message' className='text-base font-semibold '>
+							<label htmlFor='message' className=' font-semibold '>
 								Your Message
 							</label>
-							<textarea type='text' id='message' rows={6} name='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<textarea type='text' id='message' rows={6} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
-						<button type='submit'>
-							<SubmitBtn />
-						</button>
+
+						<SubmitBtn onClick={() => (handleSubmit(regForm), sendEmail)} />
 					</form>
 				</div>
 			</div>

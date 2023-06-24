@@ -92,3 +92,22 @@ a {
 	animation-duration: 2s; /* changed from 1s to 5s */
 	animation-fill-mode: both;
 }
+
+input,
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0.7rem;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	border-color: #719ece;
+}
+
+label {
+	display: block;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
