@@ -4,17 +4,16 @@ import Particlejs from '../public/components/particles';
 import Footer from '../public/components/footer';
 function MyApp({ Component, pageProps }) {
 	return (
-		<>
-			<main>
-				<Navbar />
-				<section className=''>
-					<Component {...pageProps} />
-				</section>
-				<hr />
+		<main className='relative'>
+			<Navbar />
+			<section className=''>
+				<Component {...pageProps} />
+			</section>
+			<Particlejs />
+			<section className=''>
 				<Footer />
-				<Particlejs />
-			</main>
-		</>
+			</section>
+		</main>
 	);
 }
 

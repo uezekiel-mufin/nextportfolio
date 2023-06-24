@@ -4,7 +4,7 @@ const Footer = () => {
 	const date = new Date();
 
 	return (
-		<footer className='p-1 mb-4 md:p-3 flex justify-center'>
+		<footer className='p-5 shadow-lg bg-gray-50 flex justify-center'>
 			<p className='capitalize font-semibold'>&copy; Copyright {date.getFullYear()}, All rights reserved</p>
 		</footer>
 	);

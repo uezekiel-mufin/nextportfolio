@@ -5,11 +5,8 @@ import { motion } from 'framer-motion';
 import GitBtn from '../../public/components/Buttons/gitBtn';
 import DemoBtn from '../../public/components/Buttons/demoBtn';
 const Portfolio = () => {
-	const portVariant = {
-		hidden: { y: 200 },
-	};
 	return (
-		<motion.div transiton={{ ease: 'easeOut', duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex flex-col w-full mb-[100px] '>
+		<motion.div transiton={{ ease: 'easeOut', duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>
 			<div className='flex flex-col pt-[150px] items-center gap-4'>
 				<div className='w-full text-center mb-8'>
 					<h6 className='font-bold text-[#686d75]'>Portfolio</h6>
@@ -19,7 +16,7 @@ const Portfolio = () => {
 			<div className='flex justify-center items-center h-full  '>
 				<div className='m-1 gap-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  md:gap-8 w-[90%] h-full justify-evenly content-evenly'>
 					{data.map((item) => (
-						<div key={item.id} className='relative grid grid-cols-1 shadow-lg gap-[5px] h-full justify-start shadow-pink-800 rounded-lg p-4 '>
+						<div key={item.id} className='relative grid grid-cols-1 shadow-lg gap-[5px] h-full justify-start  rounded-lg p-4 '>
 							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>
 								<Image src={item.image} alt='image' height={800} className='aspect-video h-[800px] rounded-md hover:scale-105' layout='responsive' />
 							</a>
