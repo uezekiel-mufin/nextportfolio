@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SubmitBtn from '../../public/components/Buttons/submit';
 
 const Contact = () => {
 	const {
@@ -34,9 +35,9 @@ const Contact = () => {
 		e.target.reset();
 	};
 	return (
-		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col pt-[100px] mx-2 my-4'>
+		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col mx-2'>
 			<ToastContainer position='top-center' />
-			<div className='md:my-[20px] flex flex-col  md:mb-[3rem] w-full   py-[20px] md:w-2/5 md:mx-[4rem]'>
+			<div className=' flex flex-col items-center pt-[100px]'>
 				<h1 className='text-3xl md:text-5xl mb-4 mx-2 font-bold '>Contact</h1>
 				<p className='mx-2'>If you'd like us to talk about your project rightaway,</p>
 				<p className='mx-2'>send a mail below and I'll be in touch with you as soon as possible.</p>
@@ -70,9 +71,11 @@ const Contact = () => {
 							<label htmlFor='message' className='text-base font-semibold '>
 								Your Message
 							</label>
-							<textarea type='text' id='message' name='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<textarea type='text' id='message' rows={6} name='message' className='w-7/10 rounded-md input bg-[rgba(0,0,0,0.2)] px-[10px]' />
 						</div>
-						<button className='bg-[#17161A] text-[#fff] hover:hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear md:w-[200px]  rounded-lg py-2 px-3 md:py-2 md:px-4 mt-8'>Submit</button>
+						<button type='submit'>
+							<SubmitBtn />
+						</button>
 					</form>
 				</div>
 			</div>
@@ -96,7 +99,7 @@ const Contact = () => {
 						</a>
 					</li>
 					<li>
-						<a href='https://www.linkedin.com/in/ezekiel-udiomuno-b14539150' className='text-base hover:text-red-500 active:red  ' target='_blank' rel='noreferrer'>
+						<a href='https://www.linkedin.com/in/ezekiel-udiomuno' className='text-base hover:text-red-500 active:red  ' target='_blank' rel='noreferrer'>
 							linkedin
 						</a>
 					</li>

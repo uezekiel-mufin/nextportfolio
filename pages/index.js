@@ -9,24 +9,33 @@ export default function Home() {
 		window.speechSynthesis.speak(message);
 	}, []);
 	return (
-		<motion.div transiton={{ duration: 5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='w-full md:mx-8 h-screen z-[9999] flex justify-center items-center'>
-			<main className='mx-1 flex flex-col w-full md:w-3/5 md:h-3/5 gap-8 justify-center items-center text-center'>
+		<motion.div transiton={{ duration: 5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='w-full h-screen flex justify-center items-center'>
+			<main
+				className='mx-1 flex flex-col w-full md:w-3/5 mt-20 md:mt-0
+			gap-8 justify-center items-center text-center'>
 				<h1 className='text-[#17161A] font-bold text-5xl w-4/5 md:w-full md:text-6xl mx-2 '>
 					<span className='text-[#17161A] font-semibold text-2xl md:text-4xl'> Hi, My name is</span>
 					<div>
-						{' '}
 						<Typewriter words={['Ezekiel Udiomuno']} deleteAllOnFinish={true} cursor cursorStyle='|' loop={true} typeSpeed={200} deleteSpeed={200} delaySpeed={1000} />
 						<span className='text-[#944d97]'>!</span>
 					</div>
 				</h1>
 				<h3 className='text-[#17161A] font-semibold text-2xl md:text-4xl w-4/5'>I Develop Responsive and User-friendly Websites & Web-Applications</h3>
 
-				<div className='flex mt-5 gap-8 justify-center'>
+				<div className='flex flex-col md:flex-row mt-20 md:mt-4 gap-4 md:gap-8 justify-center'>
 					<Link href='/contact'>
-						<button className='bg-[#17161A] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear  rounded-lg py-2 px-3 md:py-2 md:px-4'>Contact Me</button>
+						<a href='#_' className='relative inline-block px-4 w-[150px] py-3 font-medium group'>
+							<span className='absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
+							<span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black'></span>
+							<span className='relative text-black group-hover:text-white'>Contact Me</span>
+						</a>
 					</Link>
 					<Link href='/portfolio'>
-						<button className='bg-[#17161A] text-[#fff] hover:bg-[#561358] font-semibold text-lg transition-all duration-300 ease-linear rounded-lg  py-2  px-3 md:py-2  md:px-6'>PortFolio</button>
+						<a href='#_' className='relative inline-block px-4 py-3 w-[150px] font-medium group'>
+							<span className='absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
+							<span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black'></span>
+							<span className='relative text-black group-hover:text-white'>Portfolio</span>
+						</a>
 					</Link>
 				</div>
 			</main>
