@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import SideNav from './SideNav';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const links = [
 	{
@@ -41,9 +42,9 @@ const Navbar = () => {
 
 	return (
 		<nav className=' w-full fixed top-0 flex flex-row h-[80px] shadow-lg items-center justify-between bg-white z-[999]'>
-			<span className='flex flex-1 text-5xl italic mx-2 md:mx-10'>
+			<span className='flex flex-1 px-4 text-5xl italic mx-2 md:mx-10'>
 				<Link href='/'>
-					<h1 className='logo'>EU</h1>
+					<Image src='/images/Ezekiel_logo.png' width={180} height={25} alt='logo' className='w-full h-full' />
 				</Link>
 			</span>
 			{isMenu && (
