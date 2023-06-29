@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import SideNav from './SideNav';
@@ -30,7 +30,21 @@ const links = [
 
 const Navbar = () => {
 	const [isMenu, setIsMenu] = useState(false);
+	const [scroll, setScroll] = useState(false);
 	const { pathname } = useRouter();
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollY = window.scrollY;
+			if (currentScrollY > 100) {
+				setScroll(true);
+			} else if (currentScrollY <= 100 && scroll) {
+				setScroll(false);
+			}
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [scroll]);
 
 	const openMenu = () => {
 		setIsMenu((prev) => !prev);
@@ -41,7 +55,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className=' w-full fixed top-0 flex flex-row h-[80px] shadow-lg items-center justify-between bg-white z-[999]'>
+		<nav className={` w-full transition-all ease-linear duration-200 fixed top-0 flex flex-row h-[80px]  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
 			<span className='flex flex-1 px-4 text-5xl italic mx-2 md:mx-10'>
 				<Link href='/'>
 					<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
