@@ -6,7 +6,7 @@ import GitBtn from '../../public/components/Buttons/gitBtn';
 import DemoBtn from '../../public/components/Buttons/demoBtn';
 const Portfolio = () => {
 	return (
-		<motion.div transiton={{ ease: 'easeOut', duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>
+		<div className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>
 			<div className='flex flex-col pt-[150px] items-center gap-4'>
 				<div className='w-full text-center mb-8'>
 					<h6 className='font-bold text-[#686d75]'>Portfolio</h6>
@@ -31,7 +31,7 @@ const Portfolio = () => {
 					))}
 				</div>
 			</div>
-		</motion.div>
+		</div>
 	);
 };
 

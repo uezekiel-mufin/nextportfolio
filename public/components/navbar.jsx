@@ -44,7 +44,7 @@ const Navbar = () => {
 		<nav className=' w-full fixed top-0 flex flex-row h-[80px] shadow-lg items-center justify-between bg-white z-[999]'>
 			<span className='flex flex-1 px-4 text-5xl italic mx-2 md:mx-10'>
 				<Link href='/'>
-					<Image src='/images/Ezekiel_logo.png' width={180} height={25} alt='logo' className=' cursor-pointer w-full h-full' />
+					<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
 				</Link>
 			</span>
 			{isMenu && (
@@ -54,7 +54,7 @@ const Navbar = () => {
 			)}
 			<div className='flex relative'>
 				<div className='flex mx-4  w-full md:hidden'>
-					<span className='text-4xl text-[#3e143f]' onClick={openMenu}>
+					<span className='text-3xl font-extrabold text-[#212121]' onClick={openMenu}>
 						<AiOutlineMenuFold />
 					</span>
 				</div>
