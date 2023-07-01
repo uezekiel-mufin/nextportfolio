@@ -13,25 +13,10 @@ const Contact = () => {
 		register,
 		reset,
 		formState: { errors },
-	} = useForm({
-		mode: 'onTouched',
-		shouldFocusError: true,
-		reValidateMode: 'onSubmit',
-		criteriaMode: 'firstError',
-	});
-	const [userData, setUserData] = useState({});
-
-	const regForm = (data, e) => {
-		e.preventDefault();
-		reset();
-		setUserData(data);
-	};
-
+	} = useForm();
 	const form = useRef();
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-		console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+	const regForm = (data, e) => {
 		emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY).then(
 			(response) => {
 				toast.success('Message sent successfully');
@@ -40,8 +25,9 @@ const Contact = () => {
 				toast.error('Message not sent');
 			}
 		);
-		e.target.reset();
+		reset();
 	};
+
 	return (
 		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col mx-2'>
 			<ToastContainer position='top-center' />
@@ -56,33 +42,37 @@ const Contact = () => {
 					<p className='font-light mb-4 '>Kindly Fill in this form with your inquiry.</p>
 				</div>
 				<div className='col-start-2  row-span-full'>
-					<form className='flex flex-col gap-[1rem]' onSubmit={(handleSubmit(regForm), sendEmail)} ref={form}>
+					<form className='flex flex-col gap-[1rem]' onSubmit={handleSubmit(regForm)} ref={form}>
 						<div className='flex flex-col '>
 							<label htmlFor='name' className='  font-semibold'>
 								Your name
 							</label>
-							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' {...register('from_name', { required: 'Please enter your name' })} />
+							{errors?.from_name && <span className='text-red-500'>{errors?.from_name?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='email' className=' font-semibold '>
 								Your email
 							</label>
-							<input type='email' id='email' name='from_email' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='email' id='email' name='from_email' {...register('from_email', { required: 'Please enter your email address' })} className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							{errors?.from_email && <span className='text-red-500'>{errors?.from_email?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='subject' className=' font-semibold '>
 								Subject
 							</label>
-							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' {...register('from_subject', { required: 'Please enter a subject' })} />
+							{errors.from_subject && <span className='text-red-500'>{errors?.from_subject?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='message' className=' font-semibold '>
 								Your Message
 							</label>
-							<textarea type='text' id='message' rows={6} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<textarea type='text' id='message' rows={6} {...register('message', { required: 'Please enter your message' })} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							{errors?.message && <span className='text-red-500'>{errors.message?.message}</span>}
 						</div>
 
-						<SubmitBtn onClick={() => (handleSubmit(regForm), sendEmail)} />
+						<SubmitBtn onClick={() => handleSubmit(regForm)} />
 					</form>
 				</div>
 			</div>
