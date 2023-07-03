@@ -48,7 +48,7 @@ const data = [
 		name: 'Apple-clone',
 		description: 'An enhanced version of the Apple e-commerce website, featuring a redesigned interface and improved user experience.',
 		technologies: 'Typescript || NextJs || TailwindCSS || headless-ui || sanityIO  ',
-		liveDemo: 'https://apple-clone-neon.vercel.app/',
+		liveDemo: 'https://apple-clone-neon.vercel.app',
 		Github: 'https://github.com/Ezzywealth/apple-clone-typescript',
 	},
 	{
@@ -57,7 +57,7 @@ const data = [
 		name: 'Members Directory',
 		description: 'A member information management dashboard that provides an interface for efficiently handling and organizing members data.',
 		technologies: 'ReactJS || TailwindCSS || React-Icons',
-		liveDemo: 'https://must-dashboard.netlify.app/',
+		liveDemo: 'https://must-dashboard.netlify.app',
 		Github: 'https://github.com/Ezzywealth/must_fintech',
 	},
 ];

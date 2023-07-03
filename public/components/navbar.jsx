@@ -62,7 +62,7 @@ const Navbar = () => {
 	return (
 		<nav className={` w-full transition-all py-8 ease-linear duration-100 fixed top-0 flex flex-row h-[80px]  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
 			<span className='flex flex-1 px-4 text-5xl italic mx-2 md:mx-10'>
-				<Link href='/'>
+				<Link href={'/'}>
 					<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
 				</Link>
 			</span>

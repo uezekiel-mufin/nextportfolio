@@ -4,6 +4,7 @@ import GitBtn from '../../public/components/Buttons/gitBtn';
 import DemoBtn from '../../public/components/Buttons/demoBtn';
 
 const Portfolio = () => {
+	console.log(data);
 	return (
 		<div className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>
 			<div className='flex flex-col pt-[150px] items-center gap-4'>
@@ -23,8 +24,8 @@ const Portfolio = () => {
 							<h4 className=' flex justify-start text-sm font-semibold'>{item.technologies}</h4>
 							<p className='text-sm'>{item.description}</p>
 							<div className='flex justify-between mt-4 mb-2 w-full gap-4'>
-								<GitBtn liveDemo={item.liveDemo} />
-								<DemoBtn github={item.Github} />
+								<GitBtn github={item.Github} />
+								<DemoBtn liveDemo={item.liveDemo} />
 							</div>
 						</div>
 					))}
