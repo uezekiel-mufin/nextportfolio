@@ -22,7 +22,7 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{frontendSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-bold items-center flex gap-2 px-6 py-2'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
 							</span>
@@ -32,12 +32,12 @@ const Skills = () => {
 				<section className='flex flex-col bg-gray-50  space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-2xl p-8'>
 					<h2 className='text-2xl flex justify-center items-center gap-1 font-semibold text-center text-gray-900'>
 						<AiOutlineDash />
-						Back-End & Database
+						Back-End
 						<AiOutlineDash />
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{backendSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-bold items-center flex gap-2 px-6 py-2'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
 							</span>
@@ -52,7 +52,7 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{softSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-bold items-center flex gap-2 px-6 py-2'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
 							</span>
