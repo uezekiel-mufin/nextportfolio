@@ -1,25 +1,144 @@
-import React from 'react';
-import { AiFillHtml5, AiFillCodeSandboxSquare, AiFillGithub } from 'react-icons/ai';
-import { FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa';
-import 'tailwindcss/tailwind.css';
-
-const skillsData = [
-	{ skill: 'HTML', experience: '3 years', icon: AiFillHtml5, category: 'Frontend' },
-	{ skill: 'CSS', experience: '3 years', icon: FaCss3Alt, category: 'Frontend' },
-	{ skill: 'JavaScript', experience: '2 years', icon: AiFillCodeSandboxSquare, category: 'Frontend' },
-	{ skill: 'React', experience: '1 year', icon: FaReact, category: 'Frontend' },
-	{ skill: 'Node.js', experience: '1 year', icon: FaNodeJs, category: 'Backend' },
-	{ skill: 'MySQL', experience: '2 years', icon: null, category: 'Database' },
-	{ skill: 'MongoDB', experience: '1 year', icon: null, category: 'Database' },
-	{ skill: 'Express.js', experience: '1 year', icon: null, category: 'Backend' },
-	{ skill: 'Git', experience: '2 years', icon: AiFillGithub, category: 'Dev Tools' },
-	// Add more skills here
+export const frontendSkills = [
+	{
+		name: 'HTML5',
+		icon: '',
+	},
+	{
+		name: 'CSS3',
+		icon: '',
+	},
+	{
+		name: 'JavaScript',
+		icon: '',
+	},
+	{
+		name: 'React',
+		icon: '',
+	},
+	{
+		name: 'Next.js',
+		icon: '',
+	},
+	{
+		name: 'ReduxToolkit',
+		icon: '',
+	},
+	{
+		name: 'Jest',
+		icon: '',
+	},
+	{
+		name: 'TailwindCSS',
+		icon: '',
+	},
+	{
+		name: 'TypeScript',
+		icon: '',
+	},
+	{
+		name: 'ChakraUI',
+		icon: '',
+	},
+	{
+		name: 'React-hook-form',
+		icon: '',
+	},
+	{
+		name: 'Responsive Design',
+		icon: '',
+	},
 ];
 
-const SkillsTable = () => {
-	const uniqueCategories = [...new Set(skillsData.map((skill) => skill.category))];
+export const backendSkills = [
+	{
+		name: 'MongoDB',
+		icon: '',
+	},
+	{
+		name: 'PostgreSQL',
+		icon: '',
+	},
+	{
+		name: 'API DESIGN',
+		icon: '',
+	},
+	{
+		name: 'Integration Testing',
+		icon: '',
+	},
+	{
+		name: 'Next.js',
+		icon: '',
+	},
+	{
+		name: 'Ruby on Rails',
+		icon: '',
+	},
+	{
+		name: 'Ruby',
+		icon: '',
+	},
+	{
+		name: 'Rspec',
+		icon: '',
+	},
+	{
+		name: 'Capybara',
+		icon: '',
+	},
+	{
+		name: 'MVC Architecture',
+		icon: '',
+	},
+];
 
-	return <section id='about' className='mt-6'></section>;
-};
-
-export default SkillsTable;
+export const softSkills = [
+	{
+		name: 'Communication',
+		icon: '',
+	},
+	{
+		name: 'Teamwork',
+		icon: '',
+	},
+	{
+		name: 'Problem Solving',
+		icon: '',
+	},
+	{
+		name: 'Time Management',
+		icon: '',
+	},
+	{
+		name: 'Leadership',
+		icon: '',
+	},
+	{
+		name: 'Adaptability',
+		icon: '',
+	},
+	{
+		name: 'Vercel',
+		icon: '',
+	},
+	{
+		name: 'Git',
+		icon: '',
+	},
+	{
+		name: 'Github',
+		icon: '',
+	},
+	{
+		name: 'Remote work',
+		icon: '',
+	},
+	{
+		name: 'Cross Cultural Teams',
+		icon: '',
+	},
+	{
+		name: 'Pair Programming',
+		icon: '',
+	},
+];

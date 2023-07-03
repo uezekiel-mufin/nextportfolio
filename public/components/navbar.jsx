@@ -23,6 +23,11 @@ const links = [
 	},
 	{
 		id: 4,
+		name: 'Skills',
+		link: '/skills',
+	},
+	{
+		id: 5,
 		name: 'Contact Us',
 		link: '/contact',
 	},

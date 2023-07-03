@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import data from '../../public/components/portfolioData';
-import { motion } from 'framer-motion';
 import GitBtn from '../../public/components/Buttons/gitBtn';
 import DemoBtn from '../../public/components/Buttons/demoBtn';
+
 const Portfolio = () => {
 	return (
 		<div className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>

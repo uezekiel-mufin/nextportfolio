@@ -3,7 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 import portfolio from '../../public/images/FullSizeRender (1).jpg';
 import { motion } from 'framer-motion';
-import SkillsTable from '../../public/components/SkillsTable.';
 
 const About = () => {
 	return (
@@ -30,7 +29,6 @@ const About = () => {
 					</section>
 				</main>
 			</motion.div>
-			<SkillsTable />
 		</>
 	);
 };

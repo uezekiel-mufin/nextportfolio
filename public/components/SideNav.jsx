@@ -1,8 +1,8 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import Link from 'next/link';
-import { FaHome, FaNetworkWired, FaInfoCircle, FaPhoneAlt } from 'react-icons/fa';
+import { FaHome, FaNetworkWired, FaInfoCircle, FaPhoneAlt, FaTools } from 'react-icons/fa';
 import Image from 'next/image';
 
 const links = [
@@ -26,6 +26,12 @@ const links = [
 	},
 	{
 		id: 4,
+		name: 'Skills',
+		link: '/skills',
+		icon: <FaTools />,
+	},
+	{
+		id: 5,
 		name: 'Contact Us',
 		link: '/contact',
 		icon: <FaPhoneAlt />,
@@ -33,11 +39,8 @@ const links = [
 ];
 
 const SideNav = ({ closeMenu }) => {
-	const [activeLink, setActiveLink] = useState(0);
-
 	const linkClick = (id) => {
 		closeMenu();
-		setActiveLink(id);
 	};
 
 	return (
