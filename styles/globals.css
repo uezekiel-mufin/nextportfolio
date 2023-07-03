@@ -134,3 +134,19 @@ label {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
 	background-color: #555;
 }
+
+@keyframes slideInBtnLeft {
+	from {
+		transform: translateX(-1000%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.slide-in {
+	animation-name: slideInBtnLeft;
+	animation-duration: 2s; /* changed from 1s to 5s */
+	animation-fill-mode: both;
+}

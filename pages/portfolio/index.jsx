@@ -2,9 +2,8 @@ import Image from 'next/image';
 import data from '../../public/components/portfolioData';
 import GitBtn from '../../public/components/Buttons/gitBtn';
 import DemoBtn from '../../public/components/Buttons/demoBtn';
-
+import { motion } from 'framer-motion';
 const Portfolio = () => {
-	console.log(data);
 	return (
 		<div className='flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-16'>
 			<div className='flex flex-col pt-[150px] items-center gap-4'>
@@ -16,7 +15,7 @@ const Portfolio = () => {
 			<div className='flex justify-center items-center h-full  '>
 				<div className='m-1 gap-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  md:gap-8 w-full h-full justify-evenly content-evenly'>
 					{data.map((item) => (
-						<div key={item.id} className='relative grid grid-cols-1 shadow-lg gap-[5px] h-full justify-start  rounded-lg p-4 '>
+						<motion.div initial={{ scale: 0.5 }} animate={{ scale: 1 }} transition={{ duration: 3 }} key={item.id} className='relative grid grid-cols-1 shadow-lg gap-[5px] h-full justify-start  rounded-lg p-4 '>
 							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>
 								<Image src={item.image} alt='image' height={800} className='aspect-video h-[800px] rounded-md hover:scale-105' layout='responsive' />
 							</a>
@@ -27,7 +26,7 @@ const Portfolio = () => {
 								<GitBtn github={item.Github} />
 								<DemoBtn liveDemo={item.liveDemo} />
 							</div>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>

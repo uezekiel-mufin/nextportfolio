@@ -22,10 +22,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{frontendSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</span>
+							</motion.span>
 						))}
 					</article>
 				</section>
@@ -37,10 +37,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{backendSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</span>
+							</motion.span>
 						))}
 					</article>
 				</section>
@@ -52,10 +52,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{softSkills.map((item, index) => (
-							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-gray-500 text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</span>
+							</motion.span>
 						))}
 					</article>
 				</section>
