@@ -39,7 +39,7 @@ const data = [
 		name: 'Forkify Recipes',
 		description: 'A web application designed to retrieve recipes based on user-provided search queries, offering a convenient way to explore and discover culinary delights.',
 		technologies: 'NextJS || React Icons || TailwindCSS',
-		liveDemo: 'https://forkify-app-six.vercel.app/',
+		liveDemo: 'https://forkify-app-five.vercel.app/',
 		Github: 'https://github.com/Ezzywealth/forkify_app',
 	},
 	{
