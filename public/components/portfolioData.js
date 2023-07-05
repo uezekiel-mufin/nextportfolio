@@ -22,7 +22,7 @@ const data = [
 		description: 'A compact online store specializing in furniture sales, providing customers with a seamless shopping experience for all their furnishing needs. ',
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit || mongoDB ',
 		liveDemo: 'https://zicomm-v2.vercel.app/',
-		Github: 'https://github.com/Ezzywealth/nextJSecommerce',
+		Github: 'https://github.com/Ezzywealth/ComfySloth',
 	},
 	{
 		id: 3,
