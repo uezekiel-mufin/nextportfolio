@@ -18,7 +18,7 @@ const data = [
 	{
 		id: 2,
 		image: Zicomm2,
-		name: 'Zicomm-v2',
+		name: 'ComfySloth',
 		description: 'A compact online store specializing in furniture sales, providing customers with a seamless shopping experience for all their furnishing needs. ',
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit || mongoDB ',
 		liveDemo: 'https://zicomm-v2.vercel.app/',
