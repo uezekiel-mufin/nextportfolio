@@ -16,15 +16,6 @@ const About = () => {
 
 						<p className='w-full text-center md:text-start text-base tracking-wider'>Driven by a passion for innovation and a commitment to excellence, I constantly strive to push the boundaries of web development. With a meticulous attention to detail, I create clean and maintainable code, ensuring long-term scalability and ease of maintenance for the projects I work on..</p>
 						<p className='w-full text-center md:text-start text-base tracking-wider'>Overall, I am a dedicated full-stack developer who thrives in the fast-paced and dynamic world of software development. I bring a unique blend of technical expertise, project management skills, and a strong commitment to delivering outstanding results to every client and project I undertake.</p>
-						<div className='flex w-full justify-center md:justify-start'>
-							<motion.button initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 3 }} className='w-[60%] lg:w-[200px]'>
-								<a rel='noreferrer' target='_blank' href='https://docs.google.com/document/d/1-MGTwUQV_3dzWssg8PsUPnBJMmnVCsHo8m-FrwKbYXo/edit?usp=sharing' className='relative inline-block px-4  font-medium group w-full py-2'>
-									<span className='absolute inset-0 w-full h-full transition-all duration-400 ease-linear transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
-									<span className='absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black ransition-all duration-400 ease-linear'></span>
-									<span className='relative text-black group-hover:text-white text-xl'>View Resume</span>
-								</a>
-							</motion.button>
-						</div>
 					</section>
 					<section className='flex flex-col items-center w-auto justify-center'>
 						<motion.div initial={{ scale: 0.3 }} animate={{ scale: 1 }} transition={{ duration: 3 }} className=''>
