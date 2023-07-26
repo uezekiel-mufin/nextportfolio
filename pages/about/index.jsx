@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const About = () => {
 	return (
 		<>
-			<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='w-full mb-8 pb-8 py-40 h-full  flex justify-center items-center'>
+			<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='w-full pb-8 py-40 mb-24  flex justify-center items-center'>
 				<main className='flex flex-col-reverse shadow-2xl py-8  md:grid grid-cols-2  gap-4'>
 					<section className='flex flex-col gap-4 px-4 md:ml-20 items-end  justify-center w-full'>
 						<p className='w-full text-center md:text-start text-base tracking-wider '>

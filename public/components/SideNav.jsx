@@ -47,11 +47,11 @@ const SideNav = ({ closeMenu }) => {
 		<div className='fixed top-0 left-0 right-0 bg-white w-full z-10 flex  px-4 md:px-24 pb-4 md:py-7 h-screen'>
 			<div className='flex flex-col gap-4 w-full '>
 				<div className='flex py-8 justify-between items-center'>
-					<span className='flex flex-1 text-5xl italic  md:mx-10'>
+					<div className='flex flex-1 text-5xl italic  md:mx-10'>
 						<Link href='/'>
 							<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
 						</Link>
-					</span>
+					</div>
 					<span className='md:hidden cursor-pointer font-extrabold flex p-3 text-xl' aria-hidden='true'>
 						<AiOutlineCloseCircle onClick={() => closeMenu()} className='h-6 w-6 text-[#212121]' />
 					</span>
