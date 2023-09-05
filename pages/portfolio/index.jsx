@@ -15,7 +15,7 @@ const Portfolio = () => {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		initialSlide: 0,
-		dots: true,
+
 		useCss: true,
 		rtl: false, // Right to left movement for infinite scrolling
 		responsive: [
@@ -46,6 +46,7 @@ const Portfolio = () => {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					dots: true,
 				},
 			},
 		],
@@ -59,7 +60,7 @@ const Portfolio = () => {
 				</div>
 			</div>
 
-			<Slider {...settings} className='flex flex-col my-8 pb-8'>
+			<Slider {...settings} className='flex flex-col mb-8 pb-8'>
 				{data.map((item) => (
 					<div key={item.id} className='slide-item h-full relative shadow-lg gap-20 rounded-lg px-4 '>
 						<div className='shadow-lg p-4'>
