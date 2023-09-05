@@ -150,3 +150,7 @@ label {
 	animation-duration: 2s; /* changed from 1s to 5s */
 	animation-fill-mode: both;
 }
+
+.slide-item {
+	margin-right: 16px; /* Adjust as needed */
+}
