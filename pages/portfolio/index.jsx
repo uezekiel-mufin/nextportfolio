@@ -10,12 +10,10 @@ const Portfolio = () => {
 	const settings = {
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 3000,
-		speed: 2000,
+		speed: 3000,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		initialSlide: 0,
-
 		useCss: true,
 		rtl: false, // Right to left movement for infinite scrolling
 		responsive: [

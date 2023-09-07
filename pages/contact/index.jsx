@@ -47,28 +47,28 @@ const Contact = () => {
 							<label htmlFor='name' className='  font-semibold'>
 								Your name
 							</label>
-							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' {...register('from_name', { required: 'Please enter your name' })} />
+							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.1)] px-[10px] py-4' {...register('from_name', { required: 'Please enter your name' })} />
 							{errors?.from_name && <span className='text-red-500'>{errors?.from_name?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='email' className=' font-semibold '>
 								Your email
 							</label>
-							<input type='email' id='email' name='from_email' {...register('from_email', { required: 'Please enter your email address' })} className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<input type='email' id='email' name='from_email' {...register('from_email', { required: 'Please enter your email address' })} className='w-7/10 rounded-md py-4  bg-[rgba(0,0,0,0.1)] px-[10px]' />
 							{errors?.from_email && <span className='text-red-500'>{errors?.from_email?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='subject' className=' font-semibold '>
 								Subject
 							</label>
-							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' {...register('from_subject', { required: 'Please enter a subject' })} />
+							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.1)] px-[10px] py-4' {...register('from_subject', { required: 'Please enter a subject' })} />
 							{errors.from_subject && <span className='text-red-500'>{errors?.from_subject?.message}</span>}
 						</div>
 						<div className='flex flex-col '>
 							<label htmlFor='message' className=' font-semibold '>
 								Your Message
 							</label>
-							<textarea type='text' id='message' rows={6} {...register('message', { required: 'Please enter your message' })} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.2)] px-[10px]' />
+							<textarea type='text' id='message' rows={6} {...register('message', { required: 'Please enter your message' })} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.1)] px-[10px]' />
 							{errors?.message && <span className='text-red-500'>{errors.message?.message}</span>}
 						</div>
 
