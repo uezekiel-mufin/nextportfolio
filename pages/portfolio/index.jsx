@@ -51,7 +51,7 @@ const Portfolio = () => {
 					<h2 className='text-3xl font-bold '>Featured Projects</h2>
 				</div>
 			</div>
-			<section className='relative md:px-12 lg:px-24 xl:px-16'>
+			<section className='relative px-2 md:px-12 lg:px-24 xl:px-16'>
 				<Slider {...settings} className='flex flex-col mb-8 pb-8'>
 					{data.map((item) => (
 						<div key={item.id} className='slide-item h-full relative shadow-lg gap-20 rounded-lg p-4 '>
