@@ -32,9 +32,7 @@ const Contact = () => {
 		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col mx-2'>
 			<ToastContainer position='top-center' />
 			<div className=' flex flex-col items-center pt-[100px]'>
-				<h1 className='text-3xl md:text-5xl mb-4 mx-2 font-bold '>Contact</h1>
-				<p className='mx-2'>If you'd like us to talk about your project rightaway,</p>
-				<p className='mx-2'>send a mail below and I'll be in touch with you as soon as possible.</p>
+				<p className='mx-2  md:text-2xl font-bold text-center'>send a message and I'll be in touch with you as soon as possible.</p>
 			</div>
 			<div className='bg-[rgba(0,0,0,0.1)] form'>
 				<div className='flex flex-col gap-[1rem]'>

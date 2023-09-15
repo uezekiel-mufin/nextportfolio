@@ -13,9 +13,8 @@ const Skills = () => {
 	return (
 		<motion.section className=' pt-[100px] flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
 			<div className='flex flex-col items-center gap-4'>
-				<div className='w-full md:w-1/2 text-center mb-16 flex-wrap'>
-					<h2 className='text-4xl font-bold tracking-wider text-gray-900 flex items-center justify-center gap-2'>Skills</h2>
-					<p className='mx-2'>Below is a comprehensive list of my technical skills, showcasing the tools and frameworks that I am proficient in</p>
+				<div className='w-full md:w-1/2 text-center mb-10 flex-wrap font-semibold'>
+					<p className='px-16 md:px-4 md:text-3xl font-bold '>The skills you get from hiring me</p>
 				</div>
 			</div>
 

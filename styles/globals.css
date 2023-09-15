@@ -180,3 +180,15 @@ label {
 .slide-item {
 	margin-right: 16px; /* Adjust as needed */
 }
+
+.slick-slide {
+	width: 100% !important;
+}
+
+.slick-track {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	overflow: hidden;
+}
