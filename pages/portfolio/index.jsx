@@ -51,13 +51,13 @@ const Portfolio = () => {
 					<h2 className='text-3xl font-bold '>Featured Projects</h2>
 				</div>
 			</div>
-			<section className='relative px-2 md:px-12 lg:px-24 xl:px-16'>
+			<section className='relative  md:px-12 lg:px-24 xl:px-16'>
 				<Slider {...settings} className='flex flex-col mb-8 pb-8'>
 					{data.map((item) => (
 						<div key={item.id} className='slide-item h-full relative shadow-lg gap-20 rounded-lg p-4 '>
 							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>
 								<div className=''>
-									<Image src={item.image} alt='image' height={800} layout='responsive' className='rounded-md transition-all duration-300 ease-linear hover:scale-105' />
+									<Image placeholder='blur' src={item.image} alt='image' height={800} layout='responsive' className='rounded-md transition-all duration-300 ease-linear hover:scale-105' />
 								</div>
 							</a>
 							<h1 className='text-shadow font-bold text-2xl my-2'>{item.name}</h1>
