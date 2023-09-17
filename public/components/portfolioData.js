@@ -34,15 +34,6 @@ const data = [
 		Github: 'https://github.com/Ezzywealth/ComfySloth',
 	},
 	{
-		id: 4,
-		image: Carbooky,
-		name: 'Carbooky',
-		description: 'A web application dedicated to facilitating car rental services, allowing users to conveniently reserve cabs for their transportation needs.',
-		technologies: 'ReactJS || ReactJS || TailwindCSS || Postgres || Ruby on Rails',
-		liveDemo: 'https://carbooky.vercel.app/cabs',
-		Github: 'https://github.com/Ezzywealth/cab_bookings_frontend',
-	},
-	{
 		id: 5,
 		image: Forkify,
 		name: 'Forkify Recipes',
