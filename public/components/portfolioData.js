@@ -41,14 +41,5 @@ const data = [
 		liveDemo: 'https://azcryptoinvestment.com/',
 		Github: '',
 	},
-	{
-		id: 6,
-		image: Ncce,
-		name: 'NCCE',
-		description: 'A web application that enable organization verify the authenticity of a certificate in Nigeria.',
-		technologies: 'NextJS || TailwindCSS || TypeScript',
-		liveDemo: 'https://nccecertificate.raadaa.com/',
-		Github: '',
-	},
 ];
 export default data;
