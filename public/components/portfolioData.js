@@ -1,8 +1,7 @@
-import Forkify from '../../public/images/forkify.png';
-import MustFintech from '../../public/images/must_fintech.png';
-import Carbooky from '../../public/images/carbooky.png';
+import Fmb from '../../public/images/fmb.png';
+import Ncce from '../../public/images/ncce.png';
+import AzTrades from '../../public/images/aztrades.png';
 import Visa from '../../public/images/visaven.png';
-import Zicomm2 from '../../public/images/zicomm2.png';
 import blog from '../../public/images/ezzyblog2.png';
 
 const data = [
@@ -26,30 +25,30 @@ const data = [
 	},
 	{
 		id: 3,
-		image: Zicomm2,
-		name: 'ComfySloth',
-		description: 'A compact online store specializing in furniture sales, providing customers with a seamless shopping experience for all their furnishing needs. ',
+		image: Fmb,
+		name: 'FirstMonie',
+		description: 'A web application that enables users to perform banking transactions seemlessly. ',
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit || mongoDB ',
-		liveDemo: 'https://zicomm-v2.vercel.app/',
-		Github: 'https://github.com/Ezzywealth/ComfySloth',
+		liveDemo: 'https://firstmoniebank.com/',
+		Github: '',
 	},
 	{
 		id: 5,
-		image: Forkify,
-		name: 'Forkify Recipes',
-		description: 'A web application designed to retrieve recipes based on user-provided search queries, offering a convenient way to explore and discover culinary delights.',
+		image: AzTrades,
+		name: 'AzTrades',
+		description: 'A cryptocurrrency investment platform, that shows you price of current crypto prices.',
 		technologies: 'NextJS || React Icons || TailwindCSS',
-		liveDemo: 'https://forkify-app-five.vercel.app/',
-		Github: 'https://github.com/Ezzywealth/forkify_app',
+		liveDemo: 'https://azcryptoinvestment.com/',
+		Github: '',
 	},
 	{
 		id: 6,
-		image: MustFintech,
-		name: 'Members Directory',
-		description: 'A member information management dashboard that provides an interface for efficiently handling and organizing members data.',
-		technologies: 'ReactJS || TailwindCSS || React-Icons',
-		liveDemo: 'https://must-dashboard.netlify.app',
-		Github: 'https://github.com/Ezzywealth/must_fintech',
+		image: Ncce,
+		name: 'Certificate',
+		description: 'A web application that enable organization verify the authenticity of a certificate in Nigeria.',
+		technologies: 'NextJS || TailwindCSS || TypeScript',
+		liveDemo: 'https://nccecertificate.raadaa.com/',
+		Github: '',
 	},
 ];
 export default data;
