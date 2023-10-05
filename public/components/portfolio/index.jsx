@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import data from '../../public/components/portfolioData';
-import GitBtn from '../../public/components/Buttons/gitBtn';
+import data from '../portfolioData';
+import GitBtn from '../Buttons/gitBtn';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import DemoBtn from '../../public/components/Buttons/demoBtn';
-import NextArrow from '../../public/components/ArrowNext';
-import PrevArrow from '../../public/components/ArrowPrev';
+import DemoBtn from '../Buttons/demoBtn';
+import NextArrow from '../ArrowNext';
+import PrevArrow from '../ArrowPrev';
 
 const Portfolio = () => {
 	const settings = {
@@ -45,10 +45,11 @@ const Portfolio = () => {
 		],
 	};
 	return (
-		<div className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
-			<div className='flex flex-col pt-[150px] md:pt-[100px] items-center gap-4'>
+		<div data-aos='fade-up' data-aos-duration='1000' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
+			<div className='flex flex-col  items-center gap-4'>
 				<div className='w-full text-center mb-8'>
 					<h2 className='text-3xl font-bold '>Featured Projects</h2>
+					<p className='text-lg text-[#4d4d4e] font-normal px-8'>Here are some of the projects I have completed</p>
 				</div>
 			</div>
 			<section className='relative  md:px-12 lg:px-24 xl:px-16'>

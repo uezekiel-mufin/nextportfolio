@@ -1,20 +1,20 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
-import { backendSkills, frontendSkills, softSkills } from '../../public/components/SkillsTable.';
+import { backendSkills, frontendSkills, softSkills } from '../SkillsTable.';
 import { AiOutlineDash } from 'react-icons/ai';
 
 const Skills = () => {
 	const backendRef = React.useRef(null);
 	const skillsRef = React.useRef(null);
 
-	const backInView = useInView(backendRef);
-	const skillsInView = useInView(skillsRef);
-	console.log(backInView);
+	const backInView = useInView(backendRef, { once: true });
+	const skillsInView = useInView(skillsRef, { once: true });
 	return (
-		<motion.section className=' pt-[100px] flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
+		<motion.section data-aos='fade-up' data-aos-duration='1000' id='skills' className=' flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
 			<div className='flex flex-col items-center gap-4'>
-				<div className='w-full md:w-1/2 text-center mb-10 flex-wrap font-semibold'>
-					<p className='px-16 md:px-4 md:text-3xl font-bold '>The skills you get from hiring me</p>
+				<div className='w-full text-center mb-8'>
+					<h2 className='text-3xl font-bold '>Skills</h2>
+					<p className='text-lg text-[#4d4d4e] font-normal px-8'>Here are my expertise for your ROI</p>
 				</div>
 			</div>
 

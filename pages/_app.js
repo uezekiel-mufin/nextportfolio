@@ -1,26 +1,16 @@
-import Navbar from '../public/components/navbar';
 import '../styles/globals.css';
-import Particlejs from '../public/components/particles';
-import Footer from '../public/components/footer';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import TawkToWidget from '../public/components/Tawk';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function MyApp({ Component, pageProps }) {
-	return (
-		<main className='relative'>
-			<TawkToWidget />
-			<ToastContainer />
-			<Navbar />
-			<section className=''>
-				<Component {...pageProps} />
-			</section>
-			<Particlejs />
-			<section className=''>
-				<Footer />
-			</section>
-		</main>
-	);
+	useEffect(() => {
+		AOS.init({
+			duration: 1000,
+			easing: 'ease-in-out',
+		});
+	}, []);
+	return <Component {...pageProps} />;
 }
 
 export default MyApp;

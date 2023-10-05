@@ -5,7 +5,7 @@ const Footer = () => {
 
 	return (
 		<footer className='p-5 flex justify-center'>
-			<p className='capitalize font-semibold'>&copy; Copyright {date.getFullYear()}, All rights reserved</p>
+			<p className='capitalize font-semibold'>&copy; Copyright 2021, All rights reserved</p>
 		</footer>
 	);
 };

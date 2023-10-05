@@ -48,19 +48,7 @@ a {
 	text-shadow: 4px 4px 5px rgb(13, 141, 245);
 }
 
-.form {
-	display: grid;
-	grid-template-columns: 30% 50%;
-	padding: 100px;
-}
-
 @media (max-width: 600px) {
-	.form {
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-	}
-
 	.menuList {
 		display: flex;
 		position: absolute;

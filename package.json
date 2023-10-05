@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "aos": "^2.3.4",
     "emailjs": "^4.0.0",
     "framer-motion": "^6.5.1",
     "next": "12.2.2",

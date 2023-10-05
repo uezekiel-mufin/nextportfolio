@@ -1,13 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import SubmitBtn from '../../public/components/Buttons/submit';
+import { toast } from 'react-toastify';
+import SubmitBtn from '../Buttons/submit';
 
 const Contact = () => {
+	const formRef = React.useRef(null);
+
+	const formInView = useInView(formRef, { once: true });
 	const {
 		handleSubmit,
 		register,
@@ -29,41 +31,44 @@ const Contact = () => {
 	};
 
 	return (
-		<motion.div transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col mx-2'>
-			<ToastContainer position='top-center' />
-			<div className=' flex flex-col items-center pt-[100px]'>
-				<p className='mx-2  md:text-2xl font-bold text-center'>send a message and I'll be in touch with you as soon as possible.</p>
+		<div data-aos='fade-up' data-aos-duration='1000' id='contact' transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col w-full'>
+			<div className='flex flex-col  items-center gap-4'>
+				<div className='w-full text-center mb-8'>
+					<h2 className='text-3xl font-bold '>Contact Me</h2>
+					<p className='text-lg text-[#4d4d4e] font-normal px-8'>send a message and I'll be in touch with you as soon as possible.</p>
+				</div>
 			</div>
-			<div className='bg-[rgba(0,0,0,0.1)] form'>
-				<div className='flex flex-col gap-[1rem]'>
+
+			<motion.div transiton={{ duration: 1 }} animate={{ y: formInView ? 0 : 200 }} ref={formRef} className='bg-[rgba(0,0,0,0.1)] grid grid-col-1 md:grid-cols-3 px-4 md:px-12 lg:px-16 py-20'>
+				<div className='flex flex-col items-center gap-4 md:col-span-1'>
 					<h2 className='text-4xl'>Work inquiries</h2>
 					<p className='font-light mb-4 '>Kindly Fill in this form with your inquiry.</p>
 				</div>
-				<div className='col-start-2  row-span-full'>
-					<form className='flex flex-col gap-[1rem]' onSubmit={handleSubmit(regForm)} ref={form}>
-						<div className='flex flex-col '>
-							<label htmlFor='name' className='  font-semibold'>
+				<div className=' md:col-span-2 justify-center flex w-full'>
+					<form className='flex flex-col gap-[1rem] items-center max-w-xl w-full' onSubmit={handleSubmit(regForm)} ref={form}>
+						<div className='flex flex-col w-full'>
+							<label htmlFor='name' className=' text-gray-600  font-semibold'>
 								Your name
 							</label>
-							<input type='text' id='name' name='from_name' className='w-7/10 rounded-md  bg-[rgba(0,0,0,0.1)] px-[10px] py-4' {...register('from_name', { required: 'Please enter your name' })} />
+							<input type='text' id='name' name='from_name' className='w-full rounded-md  bg-[rgba(0,0,0,0.1)] px-[10px] py-4' {...register('from_name', { required: 'Please enter your name' })} />
 							{errors?.from_name && <span className='text-red-500'>{errors?.from_name?.message}</span>}
 						</div>
-						<div className='flex flex-col '>
-							<label htmlFor='email' className=' font-semibold '>
+						<div className='flex flex-col w-full'>
+							<label htmlFor='email' className='text-gray-600  font-semibold '>
 								Your email
 							</label>
 							<input type='email' id='email' name='from_email' {...register('from_email', { required: 'Please enter your email address' })} className='w-7/10 rounded-md py-4  bg-[rgba(0,0,0,0.1)] px-[10px]' />
 							{errors?.from_email && <span className='text-red-500'>{errors?.from_email?.message}</span>}
 						</div>
-						<div className='flex flex-col '>
-							<label htmlFor='subject' className=' font-semibold '>
+						<div className='flex flex-col w-full'>
+							<label htmlFor='subject' className='text-gray-600  font-semibold '>
 								Subject
 							</label>
 							<input type='text' id='subject' name='from_subject' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.1)] px-[10px] py-4' {...register('from_subject', { required: 'Please enter a subject' })} />
 							{errors.from_subject && <span className='text-red-500'>{errors?.from_subject?.message}</span>}
 						</div>
-						<div className='flex flex-col '>
-							<label htmlFor='message' className=' font-semibold '>
+						<div className='flex flex-col w-full'>
+							<label htmlFor='message' className='text-gray-600  font-semibold '>
 								Your Message
 							</label>
 							<textarea type='text' id='message' rows={6} {...register('message', { required: 'Please enter your message' })} name='message' className='w-7/10 rounded-md bg-[rgba(0,0,0,0.1)] px-[10px]' />
@@ -73,8 +78,8 @@ const Contact = () => {
 						<SubmitBtn onClick={() => handleSubmit(regForm)} />
 					</form>
 				</div>
-			</div>
-			<div className='md:p-[50px] capitalize'>
+			</motion.div>
+			<div className='px-4 md:px-12 lg:px-16 capitalize'>
 				<h4 className='text-2xl md:text-3xl font-semibold text-[#17161A]'>You can also reach us via:</h4>
 				<ul>
 					<li className='flex gap-2 lowercase'>
@@ -100,7 +105,7 @@ const Contact = () => {
 					</li>
 				</ul>
 			</div>
-		</motion.div>
+		</div>
 	);
 };
 

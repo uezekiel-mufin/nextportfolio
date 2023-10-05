@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import SideNav from './SideNav';
 import { useRouter } from 'next/router';
@@ -9,33 +8,34 @@ const links = [
 	{
 		id: 1,
 		name: 'Home',
-		link: '/',
+		link: '#',
 	},
 	{
 		id: 2,
 		name: 'About',
-		link: '/about',
+		link: '#about',
 	},
 	{
 		id: 3,
 		name: 'Portfolio',
-		link: '/portfolio',
+		link: '#portfolio',
 	},
 	{
 		id: 4,
 		name: 'Skills',
-		link: '/skills',
+		link: '#skills',
 	},
 	{
 		id: 5,
 		name: 'Contact Us',
-		link: '/contact',
+		link: '#contact',
 	},
 ];
 
 const Navbar = () => {
 	const [isMenu, setIsMenu] = useState(false);
 	const [scroll, setScroll] = useState(false);
+	const [activeLink, setActiveLink] = useState('Home');
 	const { pathname } = useRouter();
 
 	useEffect(() => {
@@ -60,11 +60,11 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` w-full transition-all py-8 ease-linear duration-100 fixed top-0 flex flex-row h-[80px]  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
-			<span className='flex flex-1 px-4 text-5xl italic mx-2 md:mx-10'>
-				<Link href={'/'}>
+		<nav className={` left-0 w-full transition-all px-4 md:px-12 lg:px-20  py-8 ease-linear duration-100 fixed -top-1 flex flex-row h-[80px]  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
+			<span className='flex text-5xl italic'>
+				<a href={'#'}>
 					<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
-				</Link>
+				</a>
 			</span>
 			{isMenu && (
 				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen bg-[#fff] w-full'>
@@ -79,9 +79,9 @@ const Navbar = () => {
 				</div>
 				<ul id='Menu' className='hidden  md:flex md:mx-12 justify-around gap-10 items-center  '>
 					{links.map((link) => (
-						<Link href={link.link} key={link.id}>
-							<li className={`cursor-pointer hover:text-[#944d97] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-lg ${link.link === pathname ? 'text-[#b958bd]' : ''}`}>{link.name}</li>
-						</Link>
+						<a href={link.link} key={link.id} onClick={() => setActiveLink(link.name)}>
+							<li className={`cursor-pointer hover:text-[#944d97] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-lg ${link.name === activeLink ? 'text-[#b958bd]' : ''}`}>{link.name}</li>
+						</a>
 					))}
 				</ul>
 			</div>
