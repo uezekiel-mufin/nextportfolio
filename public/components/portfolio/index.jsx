@@ -7,6 +7,7 @@ import Slider from 'react-slick';
 import DemoBtn from '../Buttons/demoBtn';
 import NextArrow from '../ArrowNext';
 import PrevArrow from '../ArrowPrev';
+import SectionHeader from '../sectionHeader/SectionHeader';
 
 const Portfolio = () => {
 	const settings = {
@@ -46,12 +47,7 @@ const Portfolio = () => {
 	};
 	return (
 		<div data-aos='fade-up' data-aos-duration='1000' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
-			<div className='flex flex-col  items-center gap-4'>
-				<div className='w-full text-center mb-8'>
-					<h2 className='text-3xl font-bold '>Featured Projects</h2>
-					<p className='text-lg text-[#4d4d4e] font-normal px-8'>Here are some of the projects I have completed</p>
-				</div>
-			</div>
+			<SectionHeader title='Featured Projects' subtitle='Here are some of the projects I have completed.' />
 			<section className='relative  md:px-12 lg:px-24 xl:px-16'>
 				<Slider {...settings} className='flex flex-col mb-8 pb-8'>
 					{data.map((item) => (

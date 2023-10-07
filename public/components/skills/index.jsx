@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { backendSkills, frontendSkills, softSkills } from '../SkillsTable.';
 import { AiOutlineDash } from 'react-icons/ai';
+import SectionHeader from '../sectionHeader/SectionHeader';
 
 const Skills = () => {
 	const backendRef = React.useRef(null);
@@ -11,13 +12,7 @@ const Skills = () => {
 	const skillsInView = useInView(skillsRef, { once: true });
 	return (
 		<motion.section data-aos='fade-up' data-aos-duration='1000' id='skills' className=' flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
-			<div className='flex flex-col items-center gap-4'>
-				<div className='w-full text-center mb-8'>
-					<h2 className='text-3xl font-bold '>Skills</h2>
-					<p className='text-lg text-[#4d4d4e] font-normal px-8'>Here are my expertise for your ROI</p>
-				</div>
-			</div>
-
+			<SectionHeader title='Skills' subtitle='Here are my skills to enhance your project.' />
 			<section className='space-y-16'>
 				<section className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>
 					<h2 className='text-2xl font-semibold flex items-center gap-1 justify-center uppercase text-gray-900'>

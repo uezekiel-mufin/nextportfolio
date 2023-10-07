@@ -5,6 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 import SubmitBtn from '../Buttons/submit';
+import SectionHeader from '../sectionHeader/SectionHeader';
 
 const Contact = () => {
 	const formRef = React.useRef(null);
@@ -32,14 +33,9 @@ const Contact = () => {
 
 	return (
 		<div data-aos='fade-up' data-aos-duration='1000' id='contact' transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex gap-8 flex-col w-full'>
-			<div className='flex flex-col  items-center gap-4'>
-				<div className='w-full text-center mb-8'>
-					<h2 className='text-3xl font-bold '>Contact Me</h2>
-					<p className='text-lg text-[#4d4d4e] font-normal px-8'>send a message and I'll be in touch with you as soon as possible.</p>
-				</div>
-			</div>
+			<SectionHeader title='Contact Me' subtitle={"send a message and I'll be in touch with you as soon as possible."} />
 
-			<motion.div transiton={{ duration: 1 }} animate={{ y: formInView ? 0 : 200 }} ref={formRef} className='bg-[rgba(0,0,0,0.1)] grid grid-col-1 md:grid-cols-3 px-4 md:px-12 lg:px-16 py-20'>
+			<div className='bg-[rgba(0,0,0,0.1)] grid grid-col-1 md:grid-cols-3 px-4 md:px-12 lg:px-16 py-20'>
 				<div className='flex flex-col items-center gap-4 md:col-span-1'>
 					<h2 className='text-4xl'>Work inquiries</h2>
 					<p className='font-light mb-4 '>Kindly Fill in this form with your inquiry.</p>
@@ -78,7 +74,7 @@ const Contact = () => {
 						<SubmitBtn onClick={() => handleSubmit(regForm)} />
 					</form>
 				</div>
-			</motion.div>
+			</div>
 			<div className='px-4 md:px-12 lg:px-16 capitalize'>
 				<h4 className='text-2xl md:text-3xl font-semibold text-[#17161A]'>You can also reach us via:</h4>
 				<ul>
