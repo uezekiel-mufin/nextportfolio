@@ -8,8 +8,12 @@ import DemoBtn from '../Buttons/demoBtn';
 import NextArrow from '../ArrowNext';
 import PrevArrow from '../ArrowPrev';
 import SectionHeader from '../sectionHeader/SectionHeader';
+import Link from 'next/link';
+import React from 'react';
 
 const Portfolio = () => {
+	const [showName, setShowName] = React.useState(false);
+	const [activeSlide, setActiveSlide] = React.useState(null);
 	const settings = {
 		infinite: true,
 		autoplay: true,
@@ -45,25 +49,29 @@ const Portfolio = () => {
 			},
 		],
 	};
+
+	const handleHover = (index) => {
+		setActiveSlide(index);
+		setShowName(true);
+	};
+	const handleOut = () => {
+		setActiveSlide(null);
+		setShowName(false);
+	};
+
 	return (
-		<div data-aos='fade-up' data-aos-duration='1000' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
+		<div data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
 			<SectionHeader title='Featured Projects' subtitle='Here are some of the projects I have completed.' />
 			<section className='relative  md:px-12 lg:px-24 xl:px-16'>
-				<Slider {...settings} className='flex flex-col mb-8 pb-8'>
+				<Slider {...settings} className='flex flex-col '>
 					{data.map((item) => (
-						<div key={item.id} className='slide-item h-full relative shadow-lg gap-20 rounded-lg p-4 '>
-							<a href={item.liveDemo} target='_blank' rel='noreferrer' className='hover:scale-105 transition-all duration-500 ease-linear'>
-								<div className=''>
-									<Image src={item.image} alt='image' height={800} layout='responsive' className='rounded-md transition-all duration-300 ease-linear hover:scale-105' />
+						<div key={item.id} onMouseOver={() => handleHover(item.id)} onMouseLeave={() => handleOut()} className='cursor-pointer slide-item h-[300px] w-[400px] relative shadow-lg gap-20 rounded-lg p-4 '>
+							<Link href={`/project/${item.id}`}>
+								<div className='shadow-xl'>
+									<Image src={item?.image} alt='image' layout='fill' className='rounded-md ' />
 								</div>
-							</a>
-							<h1 className='text-shadow font-bold text-2xl my-2'>{item.name}</h1>
-							<h4 className=' flex justify-start text-sm font-semibold my-2 italic h-[35px]'>{item.technologies}</h4>
-							<p className='text-sm h-[75px]'>{item.description}</p>
-							<div className='flex justify-between mt-4 mb-2 w-full gap-4'>
-								<GitBtn github={item.Github} />
-								<DemoBtn liveDemo={item.liveDemo} />
-							</div>
+							</Link>
+							<h1 className={`text-shadow  transition-all duration-1000 ease-linear  -bottom-2 px-4 py-3 w-full bg-[rgba(0,0,0,0.7)] text-white left-0 font-bold text-2xl my-2 ${showName && activeSlide === item.id ? 'flex absolute' : 'hidden'}`}>{item.name}</h1>
 						</div>
 					))}
 				</Slider>

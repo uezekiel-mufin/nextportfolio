@@ -11,7 +11,7 @@ const Skills = () => {
 	const backInView = useInView(backendRef, { once: true });
 	const skillsInView = useInView(skillsRef, { once: true });
 	return (
-		<motion.section data-aos='fade-up' data-aos-duration='1000' id='skills' className=' flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
+		<motion.section data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' id='skills' className=' flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
 			<SectionHeader title='Skills' subtitle='Here are my skills to enhance your project.' />
 			<section className='space-y-16'>
 				<section className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>
