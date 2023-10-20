@@ -72,7 +72,7 @@ const Navbar = () => {
 				</div>
 			)}
 			<div className='flex relative'>
-				<div className='flex mx-4  w-full md:hidden'>
+				<div className='flex  justify-end w-full md:hidden'>
 					<span className='text-3xl font-extrabold text-[#212121]' onClick={openMenu}>
 						<AiOutlineMenuFold />
 					</span>

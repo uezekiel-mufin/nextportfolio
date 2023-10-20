@@ -13,7 +13,7 @@ const About = () => {
 			<SectionHeader title='About Me' subtitle={'Discover More About Me.'} />
 			<div id='about' className='w-full pb-8   flex justify-center items-center'>
 				<motion.div id='about' className='flex flex-col-reverse   md:grid grid-cols-2  gap-4'>
-					<motion.section ref={textRef} transiton={{ duration: 1 }} animate={{ y: textInView ? 0 : 100 }} className='flex flex-col gap-4 px-4 md:ml-20 items-end  justify-center w-full'>
+					<motion.section ref={textRef} transiton={{ duration: 1 }} animate={{ y: textInView ? 0 : 100 }} className='flex flex-col gap-4 px-4 xl:ml-20 items-end  justify-center w-full'>
 						<div className='w-full text-center md:text-start text-base md:text-[1.2rem] tracking-wider'>
 							<p>With over 2 years of experience in web development, I'm driven by a passion for innovation and a steadfast commitment to excellence. My journey in this dynamic field has allowed me to continually push the boundaries of what's possible. I'm not just a developer; I'm an architect of digital experiences. My meticulous attention to detail and focus on crafting clean and maintainable code ensures long-term scalability and ease of maintenance for my projects.</p>
 

@@ -1,19 +1,18 @@
 import Image from 'next/image';
 import data from '../portfolioData';
-import GitBtn from '../Buttons/gitBtn';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import DemoBtn from '../Buttons/demoBtn';
 import NextArrow from '../ArrowNext';
 import PrevArrow from '../ArrowPrev';
 import SectionHeader from '../sectionHeader/SectionHeader';
-import Link from 'next/link';
 import React from 'react';
 
-const Portfolio = () => {
+const Portfolio = ({ handleProjectClick }) => {
 	const [showName, setShowName] = React.useState(false);
 	const [activeSlide, setActiveSlide] = React.useState(null);
+	const [showProject, setShowProject] = React.useState(false); // This is for the modal
+	const [newProject, setNewProject] = React.useState(data[0]);
 	const settings = {
 		infinite: true,
 		autoplay: true,
@@ -65,12 +64,10 @@ const Portfolio = () => {
 			<section className='relative  md:px-12 lg:px-24 xl:px-16'>
 				<Slider {...settings} className='flex flex-col '>
 					{data.map((item) => (
-						<div key={item.id} onMouseOver={() => handleHover(item.id)} onMouseLeave={() => handleOut()} className='cursor-pointer slide-item h-[300px] w-[400px] relative shadow-lg gap-20 rounded-lg p-4 '>
-							<Link href={`/project/${item.id}`}>
-								<div className='shadow-xl'>
-									<Image src={item?.image} alt='image' layout='fill' className='rounded-md ' />
-								</div>
-							</Link>
+						<div onClick={() => handleProjectClick(item.id)} key={item.id} onMouseOver={() => handleHover(item.id)} onMouseLeave={() => handleOut()} className='cursor-pointer slide-item h-[300px] w-[400px] relative shadow-lg gap-20 rounded-lg p-4 '>
+							<div className='shadow-xl'>
+								<Image src={item?.image} alt='image' layout='fill' className='rounded-md ' />
+							</div>
 							<h1 className={`text-shadow  transition-all duration-1000 ease-linear  -bottom-2 px-4 py-3 w-full bg-[rgba(0,0,0,0.7)] text-white left-0 font-bold text-2xl my-2 ${showName && activeSlide === item.id ? 'flex absolute' : 'hidden'}`}>{item.name}</h1>
 						</div>
 					))}

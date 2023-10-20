@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 export default function HeroSection() {
 	return (
-		<div data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' className='w-full md:gap-8 mt-8 md:mt-[90px] lg:h-screen overflow-hidden grid lg:grid-cols-2 justify-center  px-4 md:px-4 lg:px-10 xl:px-16'>
+		<div data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' className='w-full  gap-8 mt-8 md:mt-[90px] lg:h-screen overflow-hidden grid lg:grid-cols-2 justify-center  px-4 md:px-4 lg:px-10 xl:px-16'>
 			<main
-				className='mx-1 flex xl:pl-12 flex-col w-full min-h-screen md:mt-0
-			gap-8 justify-center items-center md:items-start '>
+				className='mx-1 flex xl:pl-12 flex-col w-full min-h-[60vh] md:min-h-screen md:mt-0
+			gap-8 justify-end md:justify-center items-center md:items-start '>
 				<motion.section initial={{ x: 200 }} animate={{ x: 0 }} transition={{ duration: 1 }}>
 					<h1 className='text-[#17161A] font-bold text-4xl md:text-5xl w-full lg:text-7xl xl:text-7xl flex flex-col items-center gap-4'>
 						<span className='text-[#333235] w-full font-semibold text-center md:text-center lg:text-start text-xl md:text-3xl '> Hello, My name is</span>
