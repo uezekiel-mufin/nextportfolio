@@ -43,20 +43,18 @@ const SideNav = ({ closeMenu }) => {
 	};
 
 	return (
-		<div className='fixed top-0 left-0 right-0 bg-white w-full z-10 flex  px-4 md:px-24 pb-4 md:py-7 h-screen'>
+		<div className='fixed top-0 left-0 right-0 bg-white w-full z-10 flex  pr-4 md:px-24 pb-4 md:py-7 h-screen'>
 			<div className='flex flex-col gap-4 w-full '>
-				<div className='flex py-8 justify-between items-center'>
-					<div className='flex flex-1 text-5xl italic  md:mx-10'>
-						<a href='#'>
-							<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
-						</a>
-					</div>
+				<div className='flex pb-8 justify-between items-center'>
+					<span className='flex  italic'>
+						<Image src='/images/newlogo2.png' width={120} height={80} alt='logo' className=' cursor-pointer w-full h-full' />
+					</span>
 					<span className='md:hidden cursor-pointer font-extrabold flex p-3 text-xl' aria-hidden='true'>
 						<AiOutlineCloseCircle onClick={() => closeMenu()} className='h-6 w-6 text-[#212121]' />
 					</span>
 				</div>
 
-				<section className='  flex flex-col gap-4 text-xl'>
+				<section className='  flex flex-col gap-4 text-xl px-4'>
 					{links.map((link) => (
 						<li key={link.id} onClick={() => linkClick(link.id)} className='list-none cursor-pointer hover:scale-105 transaition-all duration-300 ease-in-out'>
 							<a href={link.link} className='flex items-center gap-3 list-none'>

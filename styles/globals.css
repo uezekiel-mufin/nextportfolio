@@ -9,6 +9,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	/* Disable pinch zooming on touch devices */
 	touch-action: manipulation;
+	scroll-behavior: smooth;
 }
 
 body {

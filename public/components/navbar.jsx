@@ -60,11 +60,9 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` left-0 w-full transition-all px-4 md:px-12 lg:px-20  py-8 ease-linear duration-100 fixed -top-1 flex flex-row h-[80px]  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
-			<span className='flex text-5xl italic'>
-				<a href={'#'}>
-					<Image src='/images/Ezekiel_logo.png' width={400} height={50} alt='logo' className=' cursor-pointer w-full h-full' />
-				</a>
+		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-20  py-8 ease-linear duration-100 fixed -top-1 flex flex-row h-[95px] border-b items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
+			<span className='flex  italic'>
+				<Image src='/images/newlogo2.png' width={120} height={80} alt='logo' className=' cursor-pointer w-full h-full' />
 			</span>
 			{isMenu && (
 				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen bg-[#fff] w-full'>

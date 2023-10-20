@@ -5,16 +5,11 @@ import { AiOutlineDash } from 'react-icons/ai';
 import SectionHeader from '../sectionHeader/SectionHeader';
 
 const Skills = () => {
-	const backendRef = React.useRef(null);
-	const skillsRef = React.useRef(null);
-
-	const backInView = useInView(backendRef, { once: true });
-	const skillsInView = useInView(skillsRef, { once: true });
 	return (
-		<motion.section data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' id='skills' className=' flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
+		<section id='skills' className=' py-8  flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
 			<SectionHeader title='Skills' subtitle='Here are my skills to enhance your project.' />
 			<section className='space-y-16'>
-				<section className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>
+				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>
 					<h2 className='text-2xl font-semibold flex items-center gap-1 justify-center uppercase text-gray-900'>
 						<AiOutlineDash />
 						Front-End
@@ -29,7 +24,7 @@ const Skills = () => {
 						))}
 					</article>
 				</section>
-				<motion.section ref={backendRef} animate={{ y: backInView ? 0 : 300 }} transition={{ duration: 1 }} className='flex flex-col bg-gray-50  space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-2xl p-8'>
+				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50  space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-2xl p-8'>
 					<h2 className='text-2xl flex justify-center items-center gap-1 font-semibold text-center text-gray-900'>
 						<AiOutlineDash />
 						Back-End
@@ -43,10 +38,9 @@ const Skills = () => {
 							</motion.span>
 						))}
 					</article>
-				</motion.section>
-				<motion.section ref={skillsRef} animate={{ y: skillsInView ? 0 : 300 }} transition={{ duration: 1 }} className='flex flex-col bg-gray-50  space-y-4 align-center pb-16 pt-8 shadow-xl drop-shadow-2xl p-4 md:px-8'>
+				</section>
+				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50  space-y-4 align-center pb-16 pt-8 shadow-xl drop-shadow-2xl p-4 md:px-8'>
 					<h2 className='text-2xl font-semibold text-center text-gray-900 flex items-center justify-center gap-2'>
-						{' '}
 						<AiOutlineDash />
 						Soft SKills <AiOutlineDash />
 					</h2>
@@ -58,9 +52,9 @@ const Skills = () => {
 							</motion.span>
 						))}
 					</article>
-				</motion.section>
+				</section>
 			</section>
-		</motion.section>
+		</section>
 	);
 };
 

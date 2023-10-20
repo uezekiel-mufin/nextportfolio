@@ -59,7 +59,7 @@ const Portfolio = ({ handleProjectClick }) => {
 	};
 
 	return (
-		<div data-aos='fade-up' data-aos-duration='1000' data-aos-once='true' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16'>
+		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' id='portfolio' className='flex flex-col  w-full  h-full  lg:px-8 xl:px-16 py-8'>
 			<SectionHeader title='Featured Projects' subtitle='Here are some of the projects I have completed.' />
 			<section className='relative  md:px-12 lg:px-24 xl:px-16'>
 				<Slider {...settings} className='flex flex-col '>
