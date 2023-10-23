@@ -83,5 +83,27 @@ const data = [
 			transactions: 'The application offers a detailed overview of all transactions, providing users with a comprehensive history of their investment activities.',
 		},
 	},
+	{
+		id: 5,
+		image: '/images/aztrades.png',
+		name: 'Ezzy Gallery',
+		description: `Introducing a dynamic Image Gallery application that harnesses the power of the Unsplash API to curate a captivating collection of images. With this app, you have the flexibility to explore diverse image categories at your fingertips, thanks to the intuitive select field.
+		Experience a whole new level of personalization as you effortlessly rearrange your favorite images through a seamless drag-and-drop interface. Whether you're looking for the perfect visual inspiration or trying to discover specific content, the image tag search feature ensures you quickly find the images that resonate with you.`,
+		technologies: 'NextJs || TailwindCSS || Redux-toolkit',
+		liveDemo: 'https://ziks-images.vercel.app/gallery',
+		Github: 'https://github.com/Ezzywealth/stage3',
+		duration: '3 days',
+		teamSize: '1',
+		category: 'Media',
+		projectStatus: 'completed',
+		results: 'Developed an impressive Image Gallery app that boasts dynamic image categorization, user-friendly drag-and-drop image management, and efficient image tag-based searching.',
+		features: {
+			imageGallery: 'The app displays a collection of images from the Unsplash API, with options to select image categories, rearrange images via drag-and-drop, and search for images using tags.',
+			categorySelection: 'Users can easily switch between different image categories to explore a wide range of visual content.',
+			DragAndDrop: 'The drag-and-drop functionality enables users to personalize their image gallery by rearranging images as per their preferences.',
+			ImageSearch: 'A convenient image tag search feature allows users to find specific images quickly, enhancing the overall user experience.',
+			SkeletonLoader: 'To improve user experience, a skeleton loader provides placeholders for images while they load, giving users a sense of progress and responsiveness.'
+	}
+	},
 ];
 export default data;
