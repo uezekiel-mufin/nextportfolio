@@ -1,9 +1,3 @@
-import Fmb from '../../public/images/fmb.png';
-import Ncce from '../../public/images/ncce.png';
-import AzTrades from '../../public/images/aztrades.png';
-import Visa from '../../public/images/visaven.png';
-import blog from '../../public/images/ezzyblog2.png';
-
 const data = [
 	{
 		id: 1,
@@ -44,44 +38,22 @@ const data = [
 		},
 	},
 	{
-		id: 3,
-		image: '/images/fmb.png',
-		name: 'ComfySloth',
-		features: {
-			featured: 'Discover a curated selection of high-quality and stylish furniture that brings comfort to your home.',
-			addToCart: 'Effortlessly add your favorite items to the shopping cart for a seamless shopping experience.',
-			checkout: 'Experience a secure and hassle-free checkout process that ensures your peace of mind.',
-			filters: 'Easily browse and find the perfect pieces with user-friendly filtering options.',
-			history: 'Track your order history and browsing journey for a personalized shopping experience.',
-			authentication: 'Enjoy the convenience of secure user authentication and account management.',
-		},
-		description: `ComfySloth is not just your run-of-the-mill furniture store; it's a carefully crafted destination designed with your utmost comfort and lifestyle in mind. We believe that furniture is more than just pieces; it's a reflection of your personality, an embodiment of your unique tastes, and a vessel for making cherished memories.`,
-		technologies: 'NextJs || TailwindCSS || Redux-toolkit || mongoDB',
-		liveDemo: 'https://zicomm-v2.vercel.app/',
-		Github: 'https://github.com/Ezzywealth/ComfySloth',
-		duration: '5 weeks',
-		teamSize: '1',
-		category: 'E-commerce',
-		projectStatus: 'Completed',
-		results: `The result is a fully functional e-commerce platform with a stunning user interface and a seamless shopping experience, offering a wide range of high-quality, stylish, and comfortable furniture for your home.`,
-	},
-	{
 		id: 4,
-		image: '/images/aztrades.png',
-		name: 'AzTrades',
-		description: `An advanced and user-centric cryptocurrency investment platform designed to offer a comprehensive overview of the ever-fluctuating cryptocurrency market. This sophisticated platform empowers users, from novice investors to seasoned traders, with real-time data on the current prices of a vast array of cryptocurrencies. It's a one-stop solution for staying informed and making informed investment decisions in the dynamic world of digital assets.`,
-		technologies: 'NextJs || TailwindCSS || Redux-toolkit || mongoDB',
-		liveDemo: 'https://azcryptoinvestment.com/',
-		Github: 'https://github.com/Ezzywealth/AzTrades',
+		image: '/images/rvbook.png',
+		name: 'Ravebook',
+		description: `Ravebook is a revolutionary hotel booking platform designed to simplify the hotel booking process. Our platform empowers users to effortlessly discover and book hotels in their preferred locations, ensuring a seamless and convenient travel experience.`,
+		technologies: 'NextJs || ChakraUI || Redux-toolkit || TypeScript',
+		liveDemo: 'https://rvbook.vercel.app',
+		Github: '', // Please replace with the actual GitHub repository link
 		duration: '3 Weeks',
-		teamSize: '1',
-		category: 'Cryptocurrency',
-		projectStatus: 'completed',
-		results: 'Developed a cryptocurrency investment platform displaying real-time crypto prices. The project utilized Next.js for fast server-side rendering, Tailwind CSS for a sleek and responsive UI, Redux Toolkit for state management, and MongoDB for data storage.',
+		teamSize: '12',
+		category: 'Hospitality',
+		projectStatus: 'In-Progress',
+		results: 'N/A.', // Add results once available
 		features: {
-			cryptoPrices: 'The platform displays real-time cryptocurrency prices, allowing users to monitor the market and make informed investment decisions.',
-			portfolio: 'Users can view their portfolio, which displays their current investments and their respective values.',
-			transactions: 'The application offers a detailed overview of all transactions, providing users with a comprehensive history of their investment activities.',
+			searchHotel: 'Explore a vast database of hotels with detailed information on each property, including pricing, amenities, and user reviews. Customize your search based on location, budget, or preferences.',
+			bookHotel: 'Effortlessly book your chosen hotel with a secure and straightforward booking process. Confirm your reservation in just a few clicks.',
+			payment: 'Experience hassle-free and secure payment processing for your bookings. Our platform supports various payment methods to ensure your peace of mind.',
 		},
 	},
 	{

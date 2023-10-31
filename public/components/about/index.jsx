@@ -9,7 +9,7 @@ const About = () => {
 	const textRef = React.useRef(null);
 	const textInView = useInView(textRef, { once: true });
 	return (
-		<main className='py-8'>
+		<main className='py-4'>
 			<SectionHeader title='About Me' subtitle={'Discover More About Me.'} />
 			<div id='about' className='w-full pb-8   flex justify-center items-center'>
 				<motion.div id='about' className='flex flex-col-reverse   md:grid grid-cols-2  gap-4'>
