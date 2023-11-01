@@ -60,7 +60,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-20  py-8 ease-linear duration-100 fixed -top-1 flex flex-row h-[95px] border-b border-blue-100 items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
+		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-20  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
 			<span className='flex  italic'>
 				<Image src='/images/newlogo2.png' width={120} height={70} alt='logo' className=' cursor-pointer w-full h-full' />
 			</span>

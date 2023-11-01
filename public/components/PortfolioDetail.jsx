@@ -11,7 +11,7 @@ const ProjectDetails = ({ project }) => {
 		<div className=''>
 			<div className='flex flex-col gap-2 w-full items-start justify-between'>
 				<h1 className='text-2xl md:text-3xl font-bold'>{project?.name}</h1>
-				<div className='flex flex-col gap-2 md:gap-6  w-full md:flex-row md:items-center '>
+				<div className='flex flex-col  md:gap-6  w-full md:flex-row md:items-center '>
 					<div className='flex items-center '>
 						<FiClock className='text-base md:text-xl text-gray-600' />
 						<span className='ml-2'>{project?.duration}</span>

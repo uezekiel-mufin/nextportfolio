@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
 
 export default function HeroSection() {
 	return (
-		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-20  md:gap-8 mt-8 md:mt-[90px] lg:h-[80vh] overflow-hidden flex flex-col md:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-36'>
+		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-20  md:gap-8 mt-[40px] md:mt-[80px] md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-40'>
 			<main
 				className='mx-1 flex xl:pl-2 flex-col w-full min-h-[60vh] md:min-h-[80vh] md:mt-0
 			gap-8 justify-end md:justify-center items-center md:items-start '>

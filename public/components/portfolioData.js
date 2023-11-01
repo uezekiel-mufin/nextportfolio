@@ -7,7 +7,7 @@ const data = [
 		technologies: 'NextJs || ChakraUI || Redux-toolkit || TypeScript',
 		liveDemo: 'https://rvbook.vercel.app',
 		Github: '',
-		duration: '3 Weeks',
+		duration: '3 Months',
 		teamSize: '12',
 		category: 'Hospitality',
 		projectStatus: 'In-Progress',
