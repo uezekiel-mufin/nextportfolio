@@ -4,7 +4,6 @@ import Navbar from './navbar';
 import Footer from './footer';
 import TawkToWidget from './Tawk';
 import { ToastContainer } from 'react-toastify';
-import Particlejs from './particles';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Layout = ({ children }) => {
@@ -14,7 +13,6 @@ const Layout = ({ children }) => {
 			<TawkToWidget />
 			<ToastContainer position='top-center' />
 			{children}
-			<Particlejs />
 			<Footer />
 		</>
 	);

@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -10,7 +11,14 @@ function MyApp({ Component, pageProps }) {
 			easing: 'ease-in-out',
 		});
 	}, []);
-	return <Component {...pageProps} />;
+	return (
+		<>
+			<Head>
+				<link rel='icon' href='/images/newlogo2.png' className='rounded-full' />
+			</Head>
+			<Component {...pageProps} />
+		</>
+	);
 }
 
 export default MyApp;

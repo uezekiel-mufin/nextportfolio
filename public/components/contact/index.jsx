@@ -75,7 +75,7 @@ const Contact = () => {
 					</form>
 				</div>
 			</div>
-			<div className=' md:px-12 lg:px-16 capitalize'>
+			{/* <div className=' md:px-12 lg:px-16 capitalize'>
 				<h4 className='text-2xl md:text-3xl font-semibold text-[#17161A]'>You can also reach us via:</h4>
 				<ul>
 					<li className='flex gap-2 lowercase'>
@@ -100,7 +100,7 @@ const Contact = () => {
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> */}
 		</div>
 	);
 };

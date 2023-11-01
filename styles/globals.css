@@ -28,6 +28,7 @@ body {
 	/* Prevent horizontal scrolling on smaller screens */
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	background-color: #fdfefe;
 }
 
 * {

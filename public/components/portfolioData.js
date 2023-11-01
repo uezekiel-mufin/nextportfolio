@@ -1,9 +1,28 @@
 const data = [
 	{
+		id: 4,
+		image: '/images/rvbook.png',
+		name: 'Ravebook',
+		description: `Ravebook is a revolutionary hotel booking platform designed to simplify the hotel booking process. Our platform empowers users to effortlessly discover and book hotels in their preferred locations, ensuring a seamless and convenient travel experience.`,
+		technologies: 'NextJs || ChakraUI || Redux-toolkit || TypeScript',
+		liveDemo: 'https://rvbook.vercel.app',
+		Github: '', // Please replace with the actual GitHub repository link
+		duration: '3 Weeks',
+		teamSize: '12',
+		category: 'Hospitality',
+		projectStatus: 'In-Progress',
+		results: 'N/A.', // Add results once available
+		features: {
+			searchHotel: 'Explore a vast database of hotels with detailed information on each property, including pricing, amenities, and user reviews. Customize your search based on location, budget, or preferences.',
+			bookHotel: 'Effortlessly book your chosen hotel with a secure and straightforward booking process. Confirm your reservation in just a few clicks.',
+			payment: 'Experience hassle-free and secure payment processing for your bookings. Our platform supports various payment methods to ensure your peace of mind.',
+		},
+	},
+	{
 		id: 1,
 		image: '/images/visaven.png',
 		name: 'VisaVenai',
-		description: 'A web application designed to help student visa applicants prepare for their visa interviews, offering a platform to practice and improve their interview skills.',
+		description: `A web application designed to assist student visa applicants in preparing for their visa interviews serves as a valuable tool in today's globalized world. This innovative platform offers a comprehensive and user-friendly experience, aiming to empower students to excel in their visa interviews. `,
 		technologies: 'NextJS || TYpeScript || TailwindCSS || MySQL',
 		liveDemo: 'https://visavenai.com',
 		Github: 'https://github.com/Obhenimen/visaqueryapp',
@@ -37,31 +56,13 @@ const data = [
 			search: 'The platform features a search bar, allowing users to search for specific articles based on keywords.',
 		},
 	},
-	{
-		id: 4,
-		image: '/images/rvbook.png',
-		name: 'Ravebook',
-		description: `Ravebook is a revolutionary hotel booking platform designed to simplify the hotel booking process. Our platform empowers users to effortlessly discover and book hotels in their preferred locations, ensuring a seamless and convenient travel experience.`,
-		technologies: 'NextJs || ChakraUI || Redux-toolkit || TypeScript',
-		liveDemo: 'https://rvbook.vercel.app',
-		Github: '', // Please replace with the actual GitHub repository link
-		duration: '3 Weeks',
-		teamSize: '12',
-		category: 'Hospitality',
-		projectStatus: 'In-Progress',
-		results: 'N/A.', // Add results once available
-		features: {
-			searchHotel: 'Explore a vast database of hotels with detailed information on each property, including pricing, amenities, and user reviews. Customize your search based on location, budget, or preferences.',
-			bookHotel: 'Effortlessly book your chosen hotel with a secure and straightforward booking process. Confirm your reservation in just a few clicks.',
-			payment: 'Experience hassle-free and secure payment processing for your bookings. Our platform supports various payment methods to ensure your peace of mind.',
-		},
-	},
+
 	{
 		id: 5,
 		image: '/images/dnd.png',
 		name: 'Galleria',
 		description: `A dynamic Image Gallery application that harnesses the power of the Unsplash API to curate a captivating collection of images. With this app, you have the flexibility to explore diverse image categories at your fingertips, thanks to the intuitive select field.
-		Experience a whole new level of personalization as you effortlessly rearrange your favorite images through a seamless drag-and-drop interface. Whether you're looking for the perfect visual inspiration or trying to discover specific content, the image tag search feature ensures you quickly find the images that resonate with you.`,
+		Experience a whole new level of personalization as you effortlessly rearrange your favorite images through a seamless drag-and-drop interface.`,
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit',
 		liveDemo: 'https://ziks-images.vercel.app/gallery',
 		Github: 'https://github.com/Ezzywealth/stage3',
