@@ -20,14 +20,17 @@ const ProjectDetails = ({ project }) => {
 						<FiUsers className='text-base md:text-xl text-gray-600' />
 						<span className='ml-2  flex'>{`${project?.teamSize} Team Member${project?.teamSize > 1 ? 's' : ''}`} </span>
 					</div>
-					<div className='flex items-center '>
-						<FiTag className='text-base md:text-xl text-gray-600' />
+					<div className='flex items-center text-gray-600 '>
+						<FiTag className='text-base md:text-xl ' />
 						<span className='ml-2'>{project?.category}</span>
 					</div>
 				</div>
 			</div>
 
-			<div className='my-3 md:my-6'>
+			<div className='my-3'>
+				<p className='text-gray-600 font-bold text-base md:text-lg'>{project?.technologies}</p>
+			</div>
+			<div className='my-3'>
 				<p className='text-gray-600 text-base md:text-lg'>{project?.description}</p>
 			</div>
 			<div className='flex flex-row  mt-4 mb-2 w-full gap-4 '>

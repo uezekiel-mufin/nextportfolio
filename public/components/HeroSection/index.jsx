@@ -49,14 +49,14 @@ export default function HeroSection() {
 						<li className='relative animate flex justify-center cursor-pointer px-4  py-2 font-medium group'>
 							<span className='absolute inset-0 w-full h-full transition duration-700 ease-linear transform translate-x-1 translate-y-1 bg-[#3b5998]  group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
 							<span className='absolute inset-0 w-full h-full bg-white border-2 border-[#3b5998] group-hover:bg-[#3b5998]'></span>
-							<span className='relative text-black text-2xl transition duration-300 ease-linear group-hover:text-white text-center'>Contact Me</span>
+							<span className='relative text-gray-700 text-2xl transition duration-300 ease-linear group-hover:text-white text-center'>Contact Me</span>
 						</li>
 					</a>
 					<a href='#portfolio'>
 						<li className='relative animate  flex justify-center px-4 cursor-pointer py-2 w-[160px] font-medium group'>
 							<span className='absolute inset-0 w-full h-full transition duration-300 ease-linear transform translate-x-1 translate-y-1 bg-[#3b5998] group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
 							<span className='absolute inset-0 w-full h-full bg-white border-2 border-[#3b5998] group-hover:bg-[#3b5998]'></span>
-							<span className='relative text-black text-2xl text-center group-hover:text-white'>Portfolio</span>
+							<span className='relative text-gray-700 text-2xl text-center group-hover:text-white'>Portfolio</span>
 						</li>
 					</a>
 				</motion.div>
