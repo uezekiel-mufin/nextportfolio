@@ -27,10 +27,10 @@ const ProjectDetails = ({ project }) => {
 				</div>
 			</div>
 
-			<div className='my-3'>
+			<div className='my-2'>
 				<p className='text-gray-600 font-bold text-base md:text-lg'>{project?.technologies}</p>
 			</div>
-			<div className='my-3'>
+			<div className='my-2'>
 				<p className='text-gray-600 text-base md:text-lg'>{project?.description}</p>
 			</div>
 			<div className='flex flex-row  mt-4 mb-2 w-full gap-4 '>

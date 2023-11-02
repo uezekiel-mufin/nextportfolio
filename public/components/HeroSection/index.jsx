@@ -5,17 +5,14 @@ import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
 
 export default function HeroSection() {
 	return (
-		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-20  md:gap-8 mt-[40px] md:mt-[80px] md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-40'>
+		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-20  md:gap-8 mt-[40px] md:mt-[80px] md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-40 3xl:px-64'>
 			<main
 				className='mx-1 flex xl:pl-2 flex-col w-full min-h-[60vh] md:min-h-[80vh] md:mt-0
 			gap-8 justify-end md:justify-center items-center md:items-start '>
 				<motion.section initial={{ x: 200 }} animate={{ x: 0 }} transition={{ duration: 1 }} className='flex flex-col items-center w-full'>
 					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl w-full lg:text-6xl xl:text-6xl flex flex-col items-center gap-4'>
 						<span className='text-gray-700 w-full font-semibold text-center md:text-center lg:text-start text-xl md:text-xl '> Hello, My name is</span>
-						<div className='w-full text-center md:text-center  lg:text-start'>
-							Ezekiel Udiomuno
-							<span className='text-[#3b5998]'>!</span>
-						</div>
+						<div className='w-full text-center md:text-center  lg:text-start'>Ezekiel Udiomuno</div>
 					</h1>
 					<h3 className='text-gray-600 mt-4 text-center md:text-center lg:text-start font-semibold text-xl md:text-2xl w-full'>
 						I build highly efficient web solutions that <br className='hidden md:block' /> drive results and make a difference.

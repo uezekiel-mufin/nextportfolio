@@ -10,7 +10,7 @@ const Skills = () => {
 			<SectionHeader title='Skills' subtitle='Here are my skills to enhance your project.' />
 			<section className='space-y-16'>
 				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>
-					<h2 className='text-2xl font-semibold flex items-center gap-1 justify-center uppercase text-gray-900'>
+					<h2 className='text-2xl capitalize font-semibold flex items-center gap-1 justify-center text-gray-900'>
 						<AiOutlineDash />
 						Front-End
 						<AiOutlineDash />
@@ -25,7 +25,7 @@ const Skills = () => {
 					</article>
 				</section>
 				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50  space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-2xl p-8'>
-					<h2 className='text-2xl flex justify-center items-center gap-1 font-semibold text-center text-gray-900'>
+					<h2 className='text-2xl capitalize flex justify-center items-center gap-1 font-semibold text-center text-gray-900'>
 						<AiOutlineDash />
 						Back-End
 						<AiOutlineDash />
@@ -40,7 +40,7 @@ const Skills = () => {
 					</article>
 				</section>
 				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50  space-y-4 align-center pb-16 pt-8 shadow-xl drop-shadow-2xl p-4 md:px-8'>
-					<h2 className='text-2xl font-semibold text-center text-gray-900 flex items-center justify-center gap-2'>
+					<h2 className='text-2xl font-semibold capitalize text-center text-gray-900 flex items-center justify-center gap-2'>
 						<AiOutlineDash />
 						Soft SKills <AiOutlineDash />
 					</h2>
