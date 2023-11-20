@@ -5,20 +5,19 @@ import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
 
 export default function HeroSection() {
 	return (
-		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-20  md:gap-8 mt-[40px] md:mt-[80px] md:h-[90vh] overflow-hidden flex flex-col md:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-40 3xl:px-64'>
+		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[120px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
 			<main
-				className='mx-1 flex xl:pl-2 flex-col w-full min-h-[60vh] md:min-h-[80vh] md:mt-0
-			gap-8 justify-end md:justify-center items-center md:items-start '>
+				className='mx-1 flex xl:pl-2 flex-col w-full h-full
+			gap-5 justify-center items-center md:items-start '>
 				<motion.section initial={{ x: 200 }} animate={{ x: 0 }} transition={{ duration: 1 }} className='flex flex-col items-center w-full'>
-					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl w-full lg:text-6xl xl:text-6xl flex flex-col items-center gap-4'>
-						<span className='text-gray-700 w-full font-semibold text-center md:text-center lg:text-start text-xl md:text-xl '> Hello, My name is</span>
+					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl 2xl:text-6xl w-full flex flex-col items-center '>
+						<span className='text-gray-700 w-full font-semibold text-center md:text-center lg:text-start text-xl  '> Hello, My name is</span>
 						<div className='w-full text-center md:text-center  lg:text-start'>Ezekiel Udiomuno</div>
 					</h1>
-					<h3 className='text-gray-600 mt-4 text-center md:text-center lg:text-start font-semibold text-xl md:text-2xl w-full'>
-						I build highly efficient web solutions that <br className='hidden md:block' /> drive results and make a difference.
-					</h3>
+					<h3 className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-2xl  w-full'>A Front-End Engineer.</h3>
+					<h3 className='text-gray-600 capitalize  text-center md:text-center lg:text-start font-semibold text-lg  w-full'>I develop highly efficient web solutions.</h3>
 				</motion.section>
-				<ul className='flex items-start gap-8'>
+				<ul className='flex items-start justify-center w-full lg:justify-start gap-5 m-0'>
 					<li className='text-[#212121] hover:text-[#3b5998] '>
 						<a href='https://wa.me/+2348147576669' className='text-bas ' target='_blank' rel='noreferrer'>
 							<FaWhatsapp size={25} />

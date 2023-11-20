@@ -6,7 +6,7 @@ import SectionHeader from '../sectionHeader/SectionHeader';
 
 const Skills = () => {
 	return (
-		<section id='skills' className=' py-8  flex flex-col w-full mb-[100px] px-4  lg:px-8 xl:px-64'>
+		<section id='skills' className=' py-8  flex flex-col w-full mb-[100px] px-4  lg:px-16 xl:px-44'>
 			<SectionHeader title='Skills' subtitle='Here are my skills to enhance your project.' />
 			<section className='space-y-16'>
 				<section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col bg-gray-50 space-y-4 align-center py-16 pt-8 shadow-xl drop-shadow-lg p-8'>

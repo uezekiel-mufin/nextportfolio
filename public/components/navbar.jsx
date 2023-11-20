@@ -60,9 +60,9 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-20  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
+		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-12  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
 			<span className='flex  italic'>
-				<Image src='/images/newlogo2.png' width={120} height={70} alt='logo' className=' cursor-pointer w-full h-full' />
+				<Image src='/images/newlogo2.png' width={80} height={40} alt='logo' className=' cursor-pointer w-full h-full' />
 			</span>
 			{isMenu && (
 				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen bg-[#fff] w-full'>
@@ -75,10 +75,10 @@ const Navbar = () => {
 						<AiOutlineMenuFold />
 					</span>
 				</div>
-				<ul id='Menu' className='hidden  md:flex md:mx-12 justify-around gap-10 items-center  '>
+				<ul id='Menu' className='hidden  md:flex justify-around gap-5 xl:gap-10 items-center  '>
 					{links.map((link) => (
 						<a href={link.link} key={link.id} onClick={() => setActiveLink(link.name)}>
-							<li className={`cursor-pointer hover:text-[#3b5998] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-lg ${link.name === activeLink ? 'text-[#3b5998]' : ''}`}>{link.name}</li>
+							<li className={`cursor-pointer hover:text-[#3b5998] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-base lg:text-lg ${link.name === activeLink ? 'text-[#3b5998]' : ''}`}>{link.name}</li>
 						</a>
 					))}
 				</ul>
