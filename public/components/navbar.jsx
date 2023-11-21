@@ -27,7 +27,7 @@ const links = [
 	},
 	{
 		id: 5,
-		name: 'Contact Us',
+		name: 'Contact Me',
 		link: '#contact',
 	},
 ];
@@ -37,6 +37,34 @@ const Navbar = () => {
 	const [scroll, setScroll] = useState(false);
 	const [activeLink, setActiveLink] = useState('Home');
 	const { pathname } = useRouter();
+
+	const sections = ['section1', 'section2', 'section3'];
+
+  const observerCallback = (entries) => {
+		console.log(entries)
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const currentSection = entry.target.id;
+        console.log(`User is in ${currentSection}`);
+        // You can update state or perform other actions here
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(observerCallback, { threshold: 0.5 });
+
+    links.forEach((section) => {
+      const sectionRef = document.getElementById(section.link);
+      if (sectionRef) {
+        observer.observe(sectionRef);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  });
 
 	useEffect(() => {
 		const handleScroll = () => {

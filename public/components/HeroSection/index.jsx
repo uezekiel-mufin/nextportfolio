@@ -1,9 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
 
 export default function HeroSection() {
+	const [loading,setLoading] = useState(true)
 	return (
 		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[120px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
 			<main
@@ -58,7 +59,8 @@ export default function HeroSection() {
 				</motion.div>
 			</main>
 			<motion.div initial={{ x: -200 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} className='flex justify-center lg:flex  '>
-				<Image src='/images/heroImg.svg' alt='hero' width={800} height={600} />
+				<Image src='/images/heroImg.svg' alt='hero' width={800} height={600} 	className={` ${loading ? ' blur-xl shimmer' : ' blur-0'}`}
+			onLoadingComplete={() => setLoading(false)}/>
 			</motion.div>
 		</div>
 	);

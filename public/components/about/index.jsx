@@ -15,7 +15,7 @@ const About = () => {
 				<motion.div id='about' className='flex flex-col-reverse  md:justify-center md:grid grid-cols-2  gap-4'>
 					<motion.section data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='flex flex-col gap-4 px-4  items-end  justify-start w-full'>
 						<div className='w-full space-y-6 text-center md:text-start text-base tracking-wider leading-6'>
-							<p>With over 2 years of experience in web development, I'm driven by a passion for innovation and a steadfast commitment to excellence. I'm an architect of digital experiences. My meticulous attention to detail and focus on crafting clean and maintainable code ensures long-term scalability and ease of maintenance for my projects.</p>
+							<p>With several years of experience in web development, I'm driven by a passion for innovation and a steadfast commitment to excellence. I'm an architect of digital experiences. My meticulous attention to detail and focus on crafting clean and maintainable code ensures long-term scalability and ease of maintenance for my projects.</p>
 							<p>Aside coding, I love to play football, watch movies, and play video games. I also love to learn new things and I'm always open to new opportunities. I'm currently open to new opportunities, so feel free to reach out to me if you have any questions or would like to work together on a project.</p>
 						</div>
 					</motion.section>
