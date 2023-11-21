@@ -164,7 +164,7 @@ label {
 
 .slide-in {
 	animation-name: slideInBtnLeft;
-	animation-duration: 2s; /* changed from 1s to 5s */
+	animation-duration: 1s; /* changed from 1s to 5s */
 	animation-fill-mode: both;
 }
 

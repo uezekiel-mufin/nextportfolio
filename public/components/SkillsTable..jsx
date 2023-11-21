@@ -63,14 +63,6 @@ export const backendSkills = [
 		icon: '',
 	},
 	{
-		name: 'Integration Testing',
-		icon: '',
-	},
-	{
-		name: 'Next.js',
-		icon: '',
-	},
-	{
 		name: 'Ruby on Rails',
 		icon: '',
 	},
@@ -78,25 +70,9 @@ export const backendSkills = [
 		name: 'Ruby',
 		icon: '',
 	},
-	{
-		name: 'Rspec',
-		icon: '',
-	},
-	{
-		name: 'Capybara',
-		icon: '',
-	},
-	{
-		name: 'MVC Architecture',
-		icon: '',
-	},
 ];
 
 export const softSkills = [
-	{
-		name: 'Communication',
-		icon: '',
-	},
 	{
 		name: 'Teamwork',
 		icon: '',
@@ -110,15 +86,7 @@ export const softSkills = [
 		icon: '',
 	},
 	{
-		name: 'Leadership',
-		icon: '',
-	},
-	{
-		name: 'Adaptability',
-		icon: '',
-	},
-	{
-		name: 'Vercel',
+		name: 'Mentorship',
 		icon: '',
 	},
 	{
@@ -130,15 +98,7 @@ export const softSkills = [
 		icon: '',
 	},
 	{
-		name: 'Remote work',
-		icon: '',
-	},
-	{
-		name: 'Cross Cultural Teams',
-		icon: '',
-	},
-	{
-		name: 'Pair Programming',
+		name: 'Agile',
 		icon: '',
 	},
 ];
