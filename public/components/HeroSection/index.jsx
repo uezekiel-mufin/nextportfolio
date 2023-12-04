@@ -12,31 +12,31 @@ export default function HeroSection() {
 			gap-5 justify-center items-center md:items-start '>
 				<motion.section initial={{ x: 200 }} animate={{ x: 0 }} transition={{ duration: 1 }} className='flex flex-col items-center w-full'>
 					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl 2xl:text-6xl w-full flex flex-col items-center '>
-						<span className='text-gray-700 w-full font-semibold text-center md:text-center lg:text-start text-xl  '> Hello, My name is</span>
+						{/* <span className='text-gray-700 w-full font-semibold text-center md:text-center lg:text-start text-xl  '> Hello, My name is</span> */}
 						<div className='w-full text-center md:text-center  lg:text-start'>Ezekiel Udiomuno</div>
 					</h1>
-					<h3 className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-2xl  w-full'>A Front-End Engineer.</h3>
+					<h3 className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-2xl  w-full'>Front-End Engineer.</h3>
 					<h3 className='text-gray-600 capitalize  text-center md:text-center lg:text-start font-semibold text-lg  w-full'>I develop highly efficient web solutions.</h3>
 				</motion.section>
 				<ul className='flex items-start justify-center w-full lg:justify-start gap-5 m-0'>
-					<li className='text-[#212121] hover:text-[#3b5998] '>
+					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://wa.me/+2348147576669' className='text-bas ' target='_blank' rel='noreferrer'>
-							<FaWhatsapp size={25} />
+							<FaWhatsapp size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] '>
+					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='http://github.com/Ezzywealth/' className='text-base ' target='_blank' rel='noreferrer'>
-							<FaGithub size={25} />
+							<FaGithub size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] '>
+					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://www.twitter.com/EzzyWealth' className='text-base ' target='_blank' rel='noreferrer'>
-							<FaTwitter size={25} />
+							<FaTwitter size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] '>
+					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://www.linkedin.com/in/ezekiel-udiomuno' className='text-base' target='_blank' rel='noreferrer'>
-							<FaLinkedinIn size={25} />
+							<FaLinkedinIn size={20} />
 						</a>
 					</li>
 				</ul>

@@ -15,7 +15,7 @@ const Portfolio = ({ handleProjectClick }) => {
 				{data.map((item, index) => (
 					<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' key={item.id} className={`grid md:grid-cols-2 gap-4 md:gap-8 items-start  rounded-lg p-2  `}>
 						<div className={` relative block h-[200px] md:h-[220px]   ${index % 2 !== 0 ? 'md:order-1' : 'md:-order-1'}`}>
-							<Image layout='fill' src={item?.image} alt='image' className=' shadow-xl rounded-md h-auto w-auto hover:scale-105 transition-all duration-300 ' className={` ${loading ? ' blur-xl shimmer' : ' blur-0'}`}
+							<Image layout='fill' src={item?.image} alt='image' className={` shadow-xl rounded-md h-auto w-auto hover:scale-105 transition-all duration-300 ${loading ? ' blur-xl shimmer' : ' blur-0'}`}
 			onLoadingComplete={() => setLoading(false)} />
 						</div>
 						<div className={`${index % 2 !== 0 ? 'md:-order-1' : 'md:order-1'}`}>
