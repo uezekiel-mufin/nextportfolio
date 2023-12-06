@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 export default function HeroSection() {
 	const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ export default function HeroSection() {
 					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl 2xl:text-6xl w-full flex flex-col items-center '>
 						<div className='w-full text-center md:text-center  lg:text-start'>Ezekiel Udiomuno</div>
 					</h1>
-					<Typed className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-xl  w-full ' strings={['A Passionate Front-End Engineer.']} typeSpeed={100} backSpeed={50} loop />
+					{/* <Typed className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-xl  w-full ' strings={['A Passionate Front-End Engineer.']} typeSpeed={100} backSpeed={50} loop /> */}
 
 					<h3 className='text-gray-600 capitalize  text-center md:text-center lg:text-start font-semibold text-lbase w-full'>Fueled by a commitment to define industry-leading standards for pixel-perfect frontend excellence, I specialize in crafting highly efficient web solutions.</h3>
 				</motion.section>
