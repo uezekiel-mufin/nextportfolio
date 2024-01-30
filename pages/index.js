@@ -5,7 +5,6 @@ import Contact from '../public/components/contact';
 import Portfolio from '../public/components/portfolio';
 import About from '../public/components/about';
 import HeroSection from '../public/components/HeroSection';
-import ProjectDetails from '../public/components/PortfolioDetail';
 import data from '../public/components/portfolioData';
 
 export default function Home() {
@@ -19,9 +18,6 @@ export default function Home() {
 	};
 	return (
 		<Layout>
-			<section className={`transition-all duration-300 ease-linear z-[100000000] fixed top-0 left-0 h-screen w-full bg-transparent  ${showProject ? 'block' : 'hidden'}`}>
-				<ProjectDetails project={newProject} setShowProject={setShowProject} />
-			</section>
 			<main className='flex flex-col gap-20 w-full overflow-hidden divide-[#c4d5fa] divide-y-[2rem]'>
 				<HeroSection />
 				<Skills />
