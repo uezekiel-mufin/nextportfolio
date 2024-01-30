@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaLinkedinIn, FaTwitter, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import Typed from 'react-typed';
+import ContactIcon from '../../svgs/ContactIcon';
+import PortfolioIcon from '../../svgs/PortfolioIcon';
 
 export default function HeroSection() {
 	const [loading, setLoading] = useState(true);
@@ -43,18 +45,22 @@ export default function HeroSection() {
 				</ul>
 
 				<motion.div initial={{ y: 500 }} animate={{ y: 0 }} transition={{ duration: 2 }} className='flex flex-col md:flex-row  w-full mt-1  gap-4 md:gap-8 justify-center items-center lg:justify-start'>
-					<a href='#contact' className='w-[130px]'>
+					<a href='#contact' className='w-[150px]'>
 						<li className='relative animate flex justify-center cursor-pointer py-2 font-medium group'>
 							<span className='absolute inset-0 w-full h-full transition duration-700 ease-linear transform translate-x-1 translate-y-1 bg-[#3b5998]  group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
 							<span className='absolute inset-0 w-full h-full transition duration-400 ease-linear transform  bg-white border-2 border-[#3b5998] group-hover:bg-[#3b5998]'></span>
-							<span className='relative text-gray-700 text-xl transition duration-300 ease-linear group-hover:text-white text-center'>Contact Me</span>
+							<span className='relative gap-1 text-gray-700 flex items-center justify-center text-xl transition duration-300 ease-linear group-hover:text-white text-center'>
+								Contact Me <ContactIcon />{' '}
+							</span>
 						</li>
 					</a>
 					<a href='#portfolio'>
-						<li className='relative animate  flex justify-center px-4 cursor-pointer py-2 w-[130px] font-medium group'>
+						<li className='relative animate  flex justify-center px-4 cursor-pointer py-2 w-[140px] font-medium group'>
 							<span className='absolute inset-0 w-full h-full transition duration-300 ease-linear transform translate-x-1 translate-y-1 bg-[#3b5998] group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
 							<span className='absolute inset-0 w-full h-full bg-white border-2 transition duration-400 ease-linear transform   border-[#3b5998] group-hover:bg-[#3b5998]'></span>
-							<span className='relative text-gray-700 text-xl text-center group-hover:text-white'>Portfolio</span>
+							<span className='relative gap-1 flex items-center justify-center text-gray-700 text-xl text-center group-hover:text-white'>
+								Portfolio <PortfolioIcon />
+							</span>
 						</li>
 					</a>
 				</motion.div>

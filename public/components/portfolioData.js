@@ -26,7 +26,15 @@ const data = [
 		technologies: 'NextJS || TypeScript || TailwindCSS || MySQL',
 		liveDemo: 'https://visavenai.com',
 		Github: 'https://github.com/Obhenimen/visaqueryapp',
-
+	},
+	{
+		id: 3,
+		image: '/images/devlinks.png',
+		name: 'Share Swift',
+		description: `Share Swift is an innovative Progressive Web App (PWA) meticulously designed for seamless social link management. This platform empowers users to effortlessly create, save, and copy their social links as needed, all through an exceptional user interface.`,
+		technologies: 'NextJs || TailwindCSS || Redux-toolkit || Mongodb',
+		liveDemo: 'https://ezzy-devlinks.vercel.app',
+		Github: 'https://github.com/Ezzywealth/link-share',
 	},
 	{
 		id: 2,
@@ -36,7 +44,6 @@ const data = [
 		technologies: 'NextJS || TypeScript || TailwindCSS || Sanityio',
 		liveDemo: 'https://ezzyblog.vercel.app',
 		Github: 'https://github.com/Ezzywealth/ezzyblog',
-
 	},
 
 	{
@@ -47,18 +54,6 @@ const data = [
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit || MongoDB',
 		liveDemo: 'https://zicomm-v2.vercel.app/',
 		Github: 'https://github.com/Ezzywealth/ComfySloth',
-
-	},
-	{
-		id: 3,
-		image: '/images/port_image.png',
-		name: 'Share Swift',
-		description: `Share Swift is an innovative Progressive Web App (PWA) meticulously designed for seamless social link management. This platform empowers users to effortlessly create, save, and copy their social links as needed, all through an exceptional user interface.`,
-		technologies: 'NextJs || TailwindCSS || Redux-toolkit',
-		liveDemo: 'https://ezzy-devlinks.vercel.app/gallery',
-		Github: 'https://github.com/Ezzywealth/link-share',
-
-
 	},
 ];
 export default data;
