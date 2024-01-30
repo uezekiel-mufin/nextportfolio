@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { backendSkills, frontendSkills, softSkills } from '../SkillsTable.';
 import { AiOutlineDash } from 'react-icons/ai';
 import SectionHeader from '../sectionHeader/SectionHeader';
+import Image from 'next/image';
 
 const Skills = () => {
 	return (
@@ -17,10 +18,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{frontendSkills.map((item, index) => (
-							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-[#3b5998] text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer   hover:border-[#3b5998] text-sm font-semibold items-center flex gap-1 px-4 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</motion.span>
+							</span>
 						))}
 					</article>
 				</section>
@@ -32,10 +33,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{backendSkills.map((item, index) => (
-							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 1 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-[#3b5998] text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700  transition-all duration-300 ease-linear cursor-pointer   hover:border-[#3b5998] text-sm font-semibold items-center flex gap-1 px-4 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</motion.span>
+							</span>
 						))}
 					</article>
 				</section>
@@ -46,10 +47,10 @@ const Skills = () => {
 					</h2>
 					<article className='flex flex-wrap justify-center gap-4'>
 						{softSkills.map((item, index) => (
-							<motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2 }} key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:text-white hover:bg-[#3b5998] text-sm font-semibold items-center flex gap-2 px-6 py-2 hover:scale-105'>
+							<span key={index} className='border rounded-md uppercase border-gray-400 text-gray-700 transition-all duration-300 ease-linear cursor-pointer  hover:animate-pulse hover:border-[#3b5998] text-sm font-semibold items-center flex gap-1 px-4 py-2 hover:scale-105'>
 								{item.name}
 								{item.icon}
-							</motion.span>
+							</span>
 						))}
 					</article>
 				</section>

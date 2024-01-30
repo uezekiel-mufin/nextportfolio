@@ -26,16 +26,7 @@ const data = [
 		technologies: 'NextJS || TypeScript || TailwindCSS || MySQL',
 		liveDemo: 'https://visavenai.com',
 		Github: 'https://github.com/Obhenimen/visaqueryapp',
-		duration: '2 Months',
-		teamSize: '2',
-		category: 'AI',
-		projectStatus: 'Completed',
-		results: 'Designed and developed a web application to assist student visa applicants in improving their interview skills. The project utilized Next.js for server-side rendering, TypeScript for codebase integrity, Tailwind CSS for responsive and modern styling, and MySQL for secure data storage.',
-		features: {
-			chatBot: 'The application features a chatbot that simulates a real-life visa interview, allowing users to practice and improve their interview skills.',
-			faq: 'The platform offers a comprehensive FAQ section, providing users with a wealth of information to help them prepare for their visa interviews.',
-			expertSupport: 'The application offers expert support to users, providing them with the opportunity to receive professional guidance and advice.',
-		},
+
 	},
 	{
 		id: 2,
@@ -45,16 +36,7 @@ const data = [
 		technologies: 'NextJS || TypeScript || TailwindCSS || Sanityio',
 		liveDemo: 'https://ezzyblog.vercel.app',
 		Github: 'https://github.com/Ezzywealth/ezzyblog',
-		duration: '1 Month',
-		teamSize: '1',
-		category: 'Blogging',
-		projectStatus: 'Completed',
-		results: 'Created a technology-focused blog site powered by Next.js and Sanity.io. The platform enables the sharing and exploration of articles related to the tech industry.',
-		features: {
-			articles: 'The platform features a wide array of articles related to the tech industry, allowing users to explore and share their favorite articles.',
-			comments: 'The application offers a comment section for each article, enabling users to share their thoughts and opinions.',
-			search: 'The platform features a search bar, allowing users to search for specific articles based on keywords.',
-		},
+
 	},
 
 	{
@@ -65,39 +47,18 @@ const data = [
 		technologies: 'NextJs || TailwindCSS || Redux-toolkit || MongoDB',
 		liveDemo: 'https://zicomm-v2.vercel.app/',
 		Github: 'https://github.com/Ezzywealth/ComfySloth',
-		duration: '1 month',
-		teamSize: '1',
-		category: 'e-commerce',
-		projectStatus: 'completed',
-		results: 'Developed an impressive Image Gallery app that boasts dynamic image categorization, user-friendly drag-and-drop image management, and efficient image tag-based searching.',
-		features: {
-			imageGallery: 'The app displays a collection of images from the Unsplash API, with options to select image categories, rearrange images via drag-and-drop, and search for images using tags.',
-			categories: 'Users can easily switch between different image categories to explore a wide range of visual content.',
-			DragAndDrop: 'The drag-and-drop functionality enables users to personalize their image gallery by rearranging images as per their preferences.',
-			ImageSearch: 'A convenient image tag search feature allows users to find specific images quickly, enhancing the overall user experience.',
-			SkeletonLoader: 'To improve user experience, a skeleton loader provides placeholders for images while they load, giving users a sense of progress and responsiveness.',
-		},
+
 	},
-	// {
-	// 	id: 3,
-	// 	image: '/images/port_image.png',
-	// 	name: 'Galleria',
-	// 	description: `A dynamic Image Gallery application that harnesses the power of the Unsplash API to curate a captivating collection of images.`,
-	// 	technologies: 'NextJs || TailwindCSS || Redux-toolkit',
-	// 	liveDemo: 'https://ziks-images.vercel.app/gallery',
-	// 	Github: 'https://github.com/Ezzywealth/stage3',
-	// 	duration: '3 days',
-	// 	teamSize: '1',
-	// 	category: 'Media',
-	// 	projectStatus: 'completed',
-	// 	results: 'Developed an impressive Image Gallery app that boasts dynamic image categorization, user-friendly drag-and-drop image management, and efficient image tag-based searching.',
-	// 	features: {
-	// 		imageGallery: 'The app displays a collection of images from the Unsplash API, with options to select image categories, rearrange images via drag-and-drop, and search for images using tags.',
-	// 		categories: 'Users can easily switch between different image categories to explore a wide range of visual content.',
-	// 		DragAndDrop: 'The drag-and-drop functionality enables users to personalize their image gallery by rearranging images as per their preferences.',
-	// 		ImageSearch: 'A convenient image tag search feature allows users to find specific images quickly, enhancing the overall user experience.',
-	// 		SkeletonLoader: 'To improve user experience, a skeleton loader provides placeholders for images while they load, giving users a sense of progress and responsiveness.',
-	// 	},
-	// },
+	{
+		id: 3,
+		image: '/images/port_image.png',
+		name: 'Share Swift',
+		description: `Share Swift is an innovative Progressive Web App (PWA) meticulously designed for seamless social link management. This platform empowers users to effortlessly create, save, and copy their social links as needed, all through an exceptional user interface.`,
+		technologies: 'NextJs || TailwindCSS || Redux-toolkit',
+		liveDemo: 'https://ezzy-devlinks.vercel.app/gallery',
+		Github: 'https://github.com/Ezzywealth/link-share',
+
+
+	},
 ];
 export default data;

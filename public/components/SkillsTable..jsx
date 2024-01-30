@@ -1,104 +1,119 @@
+import ApiIcon from '../svgs/ApiIcon';
+import ChakraIcon from '../svgs/ChakraIcon';
+import CssIcon from '../svgs/CssIcon';
+import GitIcon from '../svgs/GitIcon';
+import GithubIcon from '../svgs/GithubIcon';
+import HtmlIcon from '../svgs/HtmlIcon';
+import JavascriptIcon from '../svgs/JavascriptIcon';
+import JestIcon from '../svgs/JestIcon';
+import LeadershipIcon from '../svgs/LeadershipIcon';
+import MongoDBIcon from '../svgs/MongoDB';
+import NextjsIcon from '../svgs/NextjsIcon';
+import PostgresIcon from '../svgs/PostgresIcon';
+import ProblemIcon from '../svgs/ProblemIcon';
+import RailsIcon from '../svgs/RailsIcon';
+import ReactIcon from '../svgs/ReactIcon';
+import ReduxIcon from '../svgs/ReduxIcon';
+import ResponsiveIcon from '../svgs/ResponsiveIcon';
+import RubyIcon from '../svgs/RubyIcon';
+import TailwindIcon from '../svgs/TailwindIcon';
+import TeamIcon from '../svgs/TeamIcon';
+import TimeIcon from '../svgs/TimeIcon';
+import TypescriptIcon from '../svgs/TypescriptIcon';
+
 export const frontendSkills = [
 	{
 		name: 'HTML5',
-		icon: '',
+		icon: <HtmlIcon />,
 	},
 	{
 		name: 'CSS3',
-		icon: '',
+		icon: <CssIcon />,
 	},
 	{
 		name: 'JavaScript',
-		icon: '',
+		icon: <JavascriptIcon />,
 	},
 	{
 		name: 'React',
-		icon: '',
+		icon: <ReactIcon />,
 	},
 	{
 		name: 'Next.js',
-		icon: '',
+		icon: <NextjsIcon />,
 	},
 	{
 		name: 'ReduxToolkit',
-		icon: '',
+		icon: <ReduxIcon />,
 	},
 	{
 		name: 'Jest',
-		icon: '',
+		icon: <JestIcon />,
 	},
 	{
 		name: 'TailwindCSS',
-		icon: '',
+		icon: <TailwindIcon />,
 	},
 	{
 		name: 'TypeScript',
-		icon: '',
+		icon: <TypescriptIcon />,
 	},
 	{
 		name: 'ChakraUI',
-		icon: '',
-	},
-	{
-		name: 'React-hook-form',
-		icon: '',
+		icon: <ChakraIcon />,
 	},
 	{
 		name: 'Responsive Design',
-		icon: '',
+		icon: <ResponsiveIcon />,
 	},
 ];
 
 export const backendSkills = [
 	{
 		name: 'MongoDB',
-		icon: '',
+		icon: <MongoDBIcon />,
 	},
 	{
 		name: 'PostgreSQL',
-		icon: '',
+		icon: <PostgresIcon />,
 	},
 	{
 		name: 'API DESIGN',
-		icon: '',
+		icon: <ApiIcon />,
 	},
 	{
 		name: 'Ruby on Rails',
-		icon: '',
+		icon: <RailsIcon />,
 	},
 	{
 		name: 'Ruby',
-		icon: '',
+		icon: <RubyIcon />,
 	},
 ];
 
 export const softSkills = [
 	{
 		name: 'Teamwork',
-		icon: '',
+		icon: <TeamIcon />,
 	},
 	{
 		name: 'Problem Solving',
-		icon: '',
+		icon: <ProblemIcon />,
 	},
 	{
 		name: 'Time Management',
-		icon: '',
+		icon: <TimeIcon />,
 	},
 	{
 		name: 'Mentorship',
-		icon: '',
+		icon: <LeadershipIcon />,
 	},
 	{
 		name: 'Git',
-		icon: '',
+		icon: <GitIcon />,
 	},
 	{
 		name: 'Github',
-		icon: '',
-	},
-	{
-		name: 'Agile',
-		icon: '',
+		icon: <GithubIcon />,
 	},
 ];
