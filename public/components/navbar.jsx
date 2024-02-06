@@ -89,30 +89,26 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` left-0 w-full transition-all  bg-nav-bg-dark pr-4 md:px-12 lg:px-12  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? ' shadow-lg' : ''} z-[999]`}>
-			<span className='flex  italic'>
-				<Image src='/images/ezekiel.jpg' width={80} height={40} alt='logo' className=' cursor-pointer w-full h-full' />
-			</span>
+		<nav className={` left-0 w-full transition-all  bg-nav-bg-dark px-4 md:px-12   py-4 ease-linear duration-100 fixed -top-1 flex  items-center justify-between ${scroll ? ' shadow-lg' : ''} z-[999]`}>
+			<Image src='/images/ezekiel.jpg' width={80} height={30} alt='logo' className=' cursor-pointer w-full ' />
 			{isMenu && (
-				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen bg-[#fff] w-full'>
+				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen  w-full'>
 					<SideNav closeMenu={closeMenu} />
 				</div>
 			)}
-			<div className='flex relative items-center gap-4'>
-				<ul id='Menu' className='hidden  md:flex justify-around gap-5 xl:gap-10 items-center  '>
-					{links.map((link) => (
-						<a href={`#${link.link}`} key={link.id} onClick={() => setActiveLink(link.link)}>
-							<li className={`cursor-pointer hover:text-custom-white transition-all    duration-200 ease-linear font-sans font-semibold  ${link.link.toLowerCase() === activeLink.toLowerCase() ? 'text-custom-white underline underline-offset-4 text-xl' : 'text-nav-text-light text-base'}`}>{link.name}</li>
-						</a>
-					))}
-				</ul>
-			</div>
+
+			<ul id='Menu' className='hidden  md:flex justify-around gap-5 xl:gap-10 items-center  '>
+				{links.map((link) => (
+					<a href={`#${link.link}`} key={link.id} onClick={() => setActiveLink(link.link)}>
+						<li className={`cursor-pointer hover:text-custom-white transition-all    duration-200 ease-linear font-sans font-semibold  ${link.link.toLowerCase() === activeLink.toLowerCase() ? 'text-custom-white underline underline-offset-4 text-xl' : 'text-nav-text-light text-base'}`}>{link.name}</li>
+					</a>
+				))}
+			</ul>
+
 			<LightDarkToggle />
-			<div className='flex  justify-end w-full md:hidden'>
-				<span className='text-3xl font-extrabold text-white' onClick={openMenu}>
-					<AiOutlineMenuFold />
-				</span>
-			</div>
+			<span className='md:hidden text-3xl font-extrabold text-white' onClick={openMenu}>
+				<AiOutlineMenuFold />
+			</span>
 		</nav>
 	);
 };

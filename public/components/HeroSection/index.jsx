@@ -9,7 +9,7 @@ import PortfolioIcon from '../../svgs/PortfolioIcon';
 export default function HeroSection() {
 	const [loading, setLoading] = useState(true);
 	return (
-		<div id='home' data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[120px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
+		<div id='home' data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[150px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
 			<main
 				className='mx-1 flex xl:pl-2 flex-col w-full h-full
 			gap-5 justify-center items-center md:items-start '>
@@ -55,7 +55,7 @@ export default function HeroSection() {
 						</li>
 					</a>
 					<a href='#portfolio'>
-						<li className='relative animate  flex justify-center px-4 cursor-pointer py-2 w-[140px] font-medium group'>
+						<li className='relative animate  flex justify-center px-4 cursor-pointer py-2 w-[150px] font-medium group'>
 							<span className='absolute inset-0 w-full h-full transition duration-300 ease-linear transform translate-x-1 translate-y-1 bg-[#3b5998] group-hover:-translate-x-0 group-hover:-translate-y-0'></span>
 							<span className='absolute inset-0 w-full h-full bg-white border-2 transition duration-400 ease-linear transform   border-[#3b5998] group-hover:bg-[#3b5998]'></span>
 							<span className='relative gap-1 flex items-center justify-center text-gray-700 text-xl text-center group-hover:text-white'>
