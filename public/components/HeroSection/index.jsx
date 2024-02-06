@@ -9,7 +9,7 @@ import PortfolioIcon from '../../svgs/PortfolioIcon';
 export default function HeroSection() {
 	const [loading, setLoading] = useState(true);
 	return (
-		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[120px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
+		<div id='home' data-aos='fade-up' data-aos-duration='500' data-aos-once='true' className='w-full gap-28  md:gap-8 mt-[120px] lg:mt-[90px]  md:min-h-[100vh] lg:min-h-[80vh] overflow-hidden flex flex-col lg:flex-row items-center  justify-center  px-4 md:px-4 lg:px-10 xl:px-16 2xl:px-32'>
 			<main
 				className='mx-1 flex xl:pl-2 flex-col w-full h-full
 			gap-5 justify-center items-center md:items-start '>

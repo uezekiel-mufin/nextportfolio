@@ -1,9 +1,7 @@
 import React from 'react';
-import { motion, useInView } from 'framer-motion';
 import { backendSkills, frontendSkills, softSkills } from '../SkillsTable.';
 import { AiOutlineDash } from 'react-icons/ai';
 import SectionHeader from '../sectionHeader/SectionHeader';
-import Image from 'next/image';
 
 const Skills = () => {
 	return (

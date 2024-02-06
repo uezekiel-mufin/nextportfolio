@@ -32,7 +32,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' id='contact' transiton={{ duration: 2 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='flex  gap-8 flex-col w-full'>
+		<div data-aos='fade-up' data-aos-duration='500' data-aos-once='true' id='contact' className='flex  gap-8 flex-col w-full'>
 			<SectionHeader title='Contact Me' subtitle={"send a message and I'll be in touch with you as soon as possible."} />
 
 			<div className='bg-contact-bg-light dark:bg-contact-bg-dark grid grid-col-1 md:grid-cols-3 px-4 md:px-12 lg:px-16 py-20'>
