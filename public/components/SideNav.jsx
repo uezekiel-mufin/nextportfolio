@@ -12,10 +12,10 @@ const links = [
 		icon: <FaHome />,
 	},
 	{
-		id: 2,
-		name: 'About',
-		link: 'about',
-		icon: <FaInfoCircle />,
+		id: 4,
+		name: 'Skills',
+		link: 'skills',
+		icon: <FaTools />,
 	},
 	{
 		id: 3,
@@ -24,10 +24,10 @@ const links = [
 		icon: <FaNetworkWired />,
 	},
 	{
-		id: 4,
-		name: 'Skills',
-		link: 'skills',
-		icon: <FaTools />,
+		id: 2,
+		name: 'About',
+		link: 'about',
+		icon: <FaInfoCircle />,
 	},
 	{
 		id: 5,

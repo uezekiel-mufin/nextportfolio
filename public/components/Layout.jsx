@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
 				<ToastContainer position='top-center' />
 				{children}
 				<Footer />
-				{/* <ParticlesContainer /> */}
+				<ParticlesContainer />
 			</ThemeContext.Provider>
 		</>
 	);

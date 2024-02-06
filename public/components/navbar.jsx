@@ -91,11 +91,10 @@ const Navbar = () => {
 	return (
 		<nav className={` left-0 w-full transition-all  bg-nav-bg-dark px-4 md:px-12   py-4 ease-linear duration-100 fixed -top-1 flex  items-center justify-between ${scroll ? ' shadow-lg' : ''} z-[999]`}>
 			<Image src='/images/ezekiel.jpg' width={80} height={30} alt='logo' className=' cursor-pointer w-full ' />
-			{isMenu && (
-				<div className='md:hidden animate-slide-in fixed z-10 top-0 left-0 right-0 h-screen  w-full'>
-					<SideNav closeMenu={closeMenu} />
-				</div>
-			)}
+
+			<div className={` ${isMenu ? 'animate-slide-in md:hidden' : 'hidden'}  fixed z-10 top-0 left-0 right-0 h-screen  w-full`}>
+				<SideNav closeMenu={closeMenu} />
+			</div>
 
 			<ul id='Menu' className='hidden  md:flex justify-around gap-5 xl:gap-10 items-center  '>
 				{links.map((link) => (
