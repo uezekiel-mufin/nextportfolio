@@ -14,30 +14,30 @@ export default function HeroSection() {
 				className='mx-1 flex xl:pl-2 flex-col w-full h-full
 			gap-5 justify-center items-center md:items-start '>
 				<motion.section initial={{ x: 200 }} animate={{ x: 0 }} transition={{ duration: 1 }} className='flex flex-col items-center w-full gap-2'>
-					<h1 className=' text-[#17161A] font-bold text-4xl md:text-5xl 2xl:text-6xl w-full flex flex-col items-center '>
+					<h1 className=' text-primary-text-light dark:text-primary-text-dark  font-bold text-4xl md:text-5xl 2xl:text-6xl w-full flex flex-col items-center '>
 						<div className='w-full text-center md:text-center  lg:text-start'>Ezekiel Udiomuno</div>
 					</h1>
-					<ReactTyped className='text-gray-600  text-center md:text-center lg:text-start font-semibold text-xl  w-full ' strings={['A Passionate Front-End Engineer.']} typeSpeed={100} backSpeed={50} loop />
+					<ReactTyped className='text-secondary-text-light dark:text-secondary-text-dark  text-center md:text-center lg:text-start font-semibold text-xl  w-full ' strings={['A Passionate and Enthusiastic Front-End Engineer.', 'With a strong adherence to industry standards.']} typeSpeed={50} backSpeed={5} loop />
 
-					<h3 className='text-gray-600 capitalize  text-center md:text-center lg:text-start font-semibold text-lbase w-full'>Fueled by a commitment to define industry-leading standards for pixel-perfect frontend excellence, I specialize in crafting highly efficient web solutions.</h3>
+					<h3 className='text-secondary-text-light dark:text-secondary-text-dark   capitalize  text-center md:text-center lg:text-start font-semibold text-lbase w-full'>Fueled by a commitment to define industry-leading standards for pixel-perfect frontend excellence, I specialize in crafting highly efficient web solutions.</h3>
 				</motion.section>
-				<ul className='flex items-start justify-center w-full lg:justify-start gap-5 m-0'>
-					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
+				<ul className='flex text-primary-text-light dark:text-primary-text-dark items-start justify-center w-full lg:justify-start gap-5 m-0'>
+					<li className=' hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://wa.me/+2348147576669' className='text-bas ' target='_blank' rel='noreferrer'>
 							<FaWhatsapp size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
+					<li className=' hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='http://github.com/Ezzywealth/' className='text-base ' target='_blank' rel='noreferrer'>
 							<FaGithub size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
+					<li className=' hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://www.twitter.com/EzzyWealth' className='text-base ' target='_blank' rel='noreferrer'>
 							<FaTwitter size={20} />
 						</a>
 					</li>
-					<li className='text-[#212121] hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
+					<li className=' hover:text-[#3b5998] hover:scale-105 transition-all duration-300'>
 						<a href='https://www.linkedin.com/in/ezekiel-udiomuno' className='text-base' target='_blank' rel='noreferrer'>
 							<FaLinkedinIn size={20} />
 						</a>

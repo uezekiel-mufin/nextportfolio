@@ -3,6 +3,7 @@ import { AiOutlineMenuFold } from 'react-icons/ai';
 import SideNav from './SideNav';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import LightDarkToggle from './LightDarkToggle';
 
 const links = [
 	{
@@ -40,31 +41,30 @@ const Navbar = () => {
 
 	const sections = ['section1', 'section2', 'section3'];
 
-  const observerCallback = (entries) => {
-		console.log(entries)
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const currentSection = entry.target.id;
-        console.log(`User is in ${currentSection}`);
-        // You can update state or perform other actions here
-      }
-    });
-  };
+	const observerCallback = (entries) => {
+		console.log(entries);
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				const currentSection = entry.target.id;
+				console.log(`User is in ${currentSection}`);
+				// You can update state or perform other actions here
+			}
+		});
+	};
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(observerCallback, { threshold: 0.5 });
+	useEffect(() => {
+		const observer = new IntersectionObserver(observerCallback, { threshold: 0.5 });
+		links.forEach((section) => {
+			const sectionRef = document.getElementById(section.link);
+			if (sectionRef) {
+				observer.observe(sectionRef);
+			}
+		});
 
-    links.forEach((section) => {
-      const sectionRef = document.getElementById(section.link);
-      if (sectionRef) {
-        observer.observe(sectionRef);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  });
+		return () => {
+			observer.disconnect();
+		};
+	});
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -88,7 +88,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className={` left-0 w-full transition-all pr-4 md:px-12 lg:px-12  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? 'bg-white shadow-lg' : 'bg-transparent'} z-[999]`}>
+		<nav className={` left-0 w-full transition-all bg-nav-bg  pr-4 md:px-12 lg:px-12  py-4 ease-linear duration-100 fixed -top-1 flex flex-row  items-center justify-between ${scroll ? ' shadow-lg' : ''} z-[999]`}>
 			<span className='flex  italic'>
 				<Image src='/images/newlogo2.png' width={80} height={40} alt='logo' className=' cursor-pointer w-full h-full' />
 			</span>
@@ -97,19 +97,20 @@ const Navbar = () => {
 					<SideNav closeMenu={closeMenu} />
 				</div>
 			)}
-			<div className='flex relative'>
-				<div className='flex  justify-end w-full md:hidden'>
-					<span className='text-3xl font-extrabold text-[#212121]' onClick={openMenu}>
-						<AiOutlineMenuFold />
-					</span>
-				</div>
+			<div className='flex relative items-center gap-4'>
 				<ul id='Menu' className='hidden  md:flex justify-around gap-5 xl:gap-10 items-center  '>
 					{links.map((link) => (
 						<a href={link.link} key={link.id} onClick={() => setActiveLink(link.name)}>
-							<li className={`cursor-pointer hover:text-[#3b5998] transition-all duration-300 ease-linear active:text-red font-sans font-semibold text-base lg:text-lg ${link.name === activeLink ? 'text-[#3b5998]' : ''}`}>{link.name}</li>
+							<li className={`cursor-pointer hover:text-custom-white transition-all   text-nav-text-light duration-200 ease-linear active:text-red font-sans font-semibold text-base lg:text-lg ${link.name === activeLink ? 'text-custom-white' : ''}`}>{link.name}</li>
 						</a>
 					))}
 				</ul>
+			</div>
+			<LightDarkToggle />
+			<div className='flex  justify-end w-full md:hidden'>
+				<span className='text-3xl font-extrabold text-white' onClick={openMenu}>
+					<AiOutlineMenuFold />
+				</span>
 			</div>
 		</nav>
 	);

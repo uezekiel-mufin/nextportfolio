@@ -18,7 +18,7 @@ export default function Home() {
 	};
 	return (
 		<Layout>
-			<main className='flex flex-col gap-20 w-full overflow-hidden divide-[#c4d5fa] divide-y-[2rem]'>
+			<main className='flex  bg-primary-bg-light dark:bg-primary-bg-dark flex-col gap-20 w-full overflow-hidden divide-[#c4d5fa] divide-y-[0.2rem]'>
 				<HeroSection />
 				<Skills />
 				<Portfolio handleProjectClick={handleProjectClick} />
